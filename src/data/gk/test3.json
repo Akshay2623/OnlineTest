@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "Which is the longest river in the world?", "options": ["Amazon", "Nile", "Ganga", "Yangtze"], "correctAnswer": 1 },
+  { "id": 2, "question": "What is the national animal of India?", "options": ["Lion", "Elephant", "Tiger", "Leopard"], "correctAnswer": 2 },
+  { "id": 3, "question": "In which year did India become independent?", "options": ["1945", "1946", "1947", "1948"], "correctAnswer": 2 },
+  { "id": 4, "question": "Which gas do plants absorb?", "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"], "correctAnswer": 1 }
+]

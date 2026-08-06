@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "What is 25% of 200?", "options": ["25", "40", "50", "75"], "correctAnswer": 2 },
+  { "id": 2, "question": "What is 3/4 of 20?", "options": ["10", "12", "15", "18"], "correctAnswer": 2 },
+  { "id": 3, "question": "What is 12 × 12?", "options": ["124", "132", "144", "154"], "correctAnswer": 2 },
+  { "id": 4, "question": "What is the square root of 144?", "options": ["10", "11", "12", "13"], "correctAnswer": 2 }
+]

@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "What is the synonym of 'assist'?", "options": ["Help", "Hide", "Hold", "Hurt"], "correctAnswer": 0 },
+  { "id": 2, "question": "What is 14 + 6?", "options": ["18", "19", "20", "22"], "correctAnswer": 2 },
+  { "id": 3, "question": "Which direction is opposite to north?", "options": ["East", "West", "South", "North-East"], "correctAnswer": 2 },
+  { "id": 4, "question": "What is the capital of India?", "options": ["Delhi", "Mumbai", "Hyderabad", "Pune"], "correctAnswer": 0 }
+]

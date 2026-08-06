@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "A train travels 60 km in 1 hour. What is its speed?", "options": ["30 km/h", "45 km/h", "60 km/h", "90 km/h"], "correctAnswer": 2 },
+  { "id": 2, "question": "What is 7 × 9?", "options": ["56", "63", "72", "81"], "correctAnswer": 1 },
+  { "id": 3, "question": "What is 1000 - 375?", "options": ["525", "625", "725", "825"], "correctAnswer": 1 },
+  { "id": 4, "question": "What is 18 + 27?", "options": ["35", "42", "45", "48"], "correctAnswer": 2 }
+]

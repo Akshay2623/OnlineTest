@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "Find the next number in the series: 2, 4, 8, 16, ?", "options": ["18", "24", "32", "36"], "correctAnswer": 2 },
+  { "id": 2, "question": "Odd one out: Apple, Mango, Carrot, Banana", "options": ["Apple", "Mango", "Carrot", "Banana"], "correctAnswer": 2 },
+  { "id": 3, "question": "If PENCIL is coded as QFODJM, how is PAPER coded?", "options": ["QBQFS", "QBQFS", "QBQFS", "QBSFS"], "correctAnswer": 3 },
+  { "id": 4, "question": "Find the missing term: A, C, E, G, ?", "options": ["H", "I", "J", "K"], "correctAnswer": 1 }
+]

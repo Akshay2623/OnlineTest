@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "Choose the antonym of 'ancient'.", "options": ["Old", "Historic", "Modern", "Past"], "correctAnswer": 2 },
+  { "id": 2, "question": "Fill in the blank: She has lived here ___ 2020.", "options": ["for", "since", "from", "by"], "correctAnswer": 1 },
+  { "id": 3, "question": "Pick the correct preposition: interested ___ music.", "options": ["in", "on", "at", "for"], "correctAnswer": 0 },
+  { "id": 4, "question": "Choose the plural form of 'child'.", "options": ["Childs", "Children", "Childes", "Childer"], "correctAnswer": 1 }
+]

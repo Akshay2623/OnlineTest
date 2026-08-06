@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "Choose the correct article: ___ apple a day keeps the doctor away.", "options": ["A", "An", "The", "No article"], "correctAnswer": 1 },
+  { "id": 2, "question": "Pick the synonym of 'rapid'.", "options": ["Slow", "Fast", "Weak", "Soft"], "correctAnswer": 1 },
+  { "id": 3, "question": "Select the correct spelling.", "options": ["Recieve", "Receive", "Receeve", "Receve"], "correctAnswer": 1 },
+  { "id": 4, "question": "Which sentence is grammatically correct?", "options": ["He go to school daily.", "He goes to school daily.", "He going to school daily.", "He gone to school daily."], "correctAnswer": 1 }
+]

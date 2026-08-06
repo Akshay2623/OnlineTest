@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "What is the capital of India?", "options": ["Mumbai", "Delhi", "Jaipur", "Kolkata"], "correctAnswer": 1 },
+  { "id": 2, "question": "How many continents are there?", "options": ["5", "6", "7", "8"], "correctAnswer": 2 },
+  { "id": 3, "question": "Which is the largest ocean?", "options": ["Atlantic", "Indian", "Arctic", "Pacific"], "correctAnswer": 3 },
+  { "id": 4, "question": "Who is known as the Father of the Nation in India?", "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Subhas Chandra Bose", "Bhagat Singh"], "correctAnswer": 1 }
+]

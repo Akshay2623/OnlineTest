@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "Fill in the blank: The team played ___ in the final match.", "options": ["good", "well", "better", "best"], "correctAnswer": 1 },
+  { "id": 2, "question": "What is the opposite of 'expand'?", "options": ["increase", "enlarge", "shrink", "spread"], "correctAnswer": 2 },
+  { "id": 3, "question": "Choose the correct passive voice: The chef cooked the meal.", "options": ["The meal is cooked by the chef.", "The meal was cooked by the chef.", "The meal has cooked by the chef.", "The meal cooked by the chef."], "correctAnswer": 1 },
+  { "id": 4, "question": "Identify the adjective.", "options": ["run", "blue", "quickly", "laughter"], "correctAnswer": 1 }
+]

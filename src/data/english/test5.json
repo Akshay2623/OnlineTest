@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "Choose the correct word: She was ___ to hear the news.", "options": ["disappointed", "delighted", "unwilling", "silent"], "correctAnswer": 1 },
+  { "id": 2, "question": "Select the correct spelling.", "options": ["Definitely", "Definately", "Difinitely", "Definatly"], "correctAnswer": 0 },
+  { "id": 3, "question": "Fill in the blank: I have not seen him ___ Monday.", "options": ["for", "since", "from", "during"], "correctAnswer": 1 },
+  { "id": 4, "question": "Pick the correct phrase.", "options": ["a piece of advice", "an advice", "many advices", "some advicees"], "correctAnswer": 0 }
+]

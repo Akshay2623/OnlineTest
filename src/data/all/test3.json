@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "Fill in the blank: The sun rises in the ___.", "options": ["West", "East", "North", "South"], "correctAnswer": 1 },
+  { "id": 2, "question": "What is 9 × 9?", "options": ["72", "79", "81", "89"], "correctAnswer": 2 },
+  { "id": 3, "question": "Which is a noun?", "options": ["quickly", "blue", "happiness", "softly"], "correctAnswer": 2 },
+  { "id": 4, "question": "Which ocean lies between Africa and Australia?", "options": ["Atlantic", "Indian", "Pacific", "Arctic"], "correctAnswer": 1 }
+]

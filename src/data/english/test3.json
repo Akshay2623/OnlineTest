@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "Which word best completes the sentence? The movie was so ___ that everyone watched till the end.", "options": ["boring", "engaging", "rough", "tiny"], "correctAnswer": 1 },
+  { "id": 2, "question": "Select the synonym of 'assist'.", "options": ["Help", "Hide", "Fight", "Block"], "correctAnswer": 0 },
+  { "id": 3, "question": "Choose the correct sentence.", "options": ["Neither of the answers are correct.", "Neither of the answers is correct.", "Neither of the answer is correct.", "Neither are of the answers correct."], "correctAnswer": 1 },
+  { "id": 4, "question": "Which word is a noun?", "options": ["quickly", "beautiful", "happiness", "bright"], "correctAnswer": 2 }
+]

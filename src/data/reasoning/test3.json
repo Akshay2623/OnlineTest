@@ -1,0 +1,6 @@
+[
+  { "id": 1, "question": "If CAT is coded as DBU, then DOG is coded as?", "options": ["EPH", "EOG", "COH", "EPG"], "correctAnswer": 0 },
+  { "id": 2, "question": "Which word does not belong? Triangle, Square, Circle, Cube", "options": ["Triangle", "Square", "Circle", "Cube"], "correctAnswer": 3 },
+  { "id": 3, "question": "How many sides does a hexagon have?", "options": ["5", "6", "7", "8"], "correctAnswer": 1 },
+  { "id": 4, "question": "Find the next letter: B, D, F, H, ?", "options": ["I", "J", "K", "L"], "correctAnswer": 1 }
+]
