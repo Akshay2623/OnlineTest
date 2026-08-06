@@ -1,552 +1,302 @@
 [
   {
     "id": 1,
-    "question": "If PEN is coded as QFO, then BOOK is coded as?",
-    "options": [
-      "CPPL",
-      "CPNL",
-      "DQPL",
-      "BQQL"
-    ],
+    "question": "यदि PEN = QFO है, तो BOOK = ?",
+    "options": ["CPPL", "CPNL", "DQPL", "BQQL"],
     "correctAnswer": 0
   },
   {
     "id": 2,
-    "question": "Complete the series: 3, 7, 15, 31, ?",
-    "options": [
-      "61",
-      "62",
-      "63",
-      "64"
-    ],
+    "question": "श्रृंखला पूरी कीजिए: 3, 7, 15, 31, ?",
+    "options": ["61", "62", "63", "64"],
     "correctAnswer": 2
   },
   {
     "id": 3,
-    "question": "Odd one out: Apple, Kela, Gajar, Amrud",
-    "options": [
-      "Apple",
-      "Kela",
-      "Gajar",
-      "Amrud"
-    ],
+    "question": "विषम शब्द चुनिए",
+    "options": ["आम", "केला", "गाजर", "अमरूद"],
     "correctAnswer": 2
   },
   {
     "id": 4,
-    "question": "If all doctors are honest and some honest people are players, what can be concluded?",
-    "options": [
-      "All players are doctors",
-      "Some players are doctors",
-      "No conclusion",
-      "All doctors are players"
-    ],
+    "question": "यदि सभी डॉक्टर ईमानदार हैं और कुछ ईमानदार लोग खिलाड़ी हैं, तो क्या निष्कर्ष निकलेगा?",
+    "options": ["सभी खिलाड़ी डॉक्टर हैं", "कुछ खिलाड़ी डॉक्टर हैं", "कोई निष्कर्ष नहीं", "सभी डॉक्टर खिलाड़ी हैं"],
     "correctAnswer": 2
   },
   {
     "id": 5,
-    "question": "Ravi walks 20 meters north, then turns right and walks 15 meters. Which direction is he facing now?",
-    "options": [
-      "North",
-      "South",
-      "East",
-      "West"
-    ],
+    "question": "रवि उत्तर दिशा की ओर 20 मीटर चला, फिर दाएँ मुड़कर 15 मीटर चला। अब वह किस दिशा की ओर मुख किए हुए है?",
+    "options": ["उत्तर", "दक्षिण", "पूर्व", "पश्चिम"],
     "correctAnswer": 2
   },
   {
     "id": 6,
-    "question": "If A=1, B=2, C=3... then DOG = ?",
-    "options": [
-      "26",
-      "24",
-      "25",
-      "27"
-    ],
+    "question": "यदि A=1, B=2, C=3... तो DOG = ?",
+    "options": ["26", "24", "25", "27"],
     "correctAnswer": 0
   },
   {
     "id": 7,
-    "question": "Complete the series: A, D, G, J, ?",
-    "options": [
-      "L",
-      "M",
-      "N",
-      "O"
-    ],
+    "question": "श्रृंखला पूरी करें: A, D, G, J, ?",
+    "options": ["L", "M", "N", "O"],
     "correctAnswer": 1
   },
   {
     "id": 8,
-    "question": "Odd number out",
-    "options": [
-      "16",
-      "25",
-      "36",
-      "45"
-    ],
+    "question": "विषम संख्या चुनिए",
+    "options": ["16", "25", "36", "45"],
     "correctAnswer": 3
   },
   {
     "id": 9,
-    "question": "If CAT = DBU, then BAT = ?",
-    "options": [
-      "CBU",
-      "DBU",
-      "CBT",
-      "DCU"
-    ],
+    "question": "यदि CAT = DBU, तो BAT = ?",
+    "options": ["CBU", "DBU", "CBT", "DCU"],
     "correctAnswer": 0
   },
   {
     "id": 10,
-    "question": "What is the angle between the hands of a clock at 6:00?",
-    "options": [
-      "90 degrees",
-      "180 degrees",
-      "120 degrees",
-      "60 degrees"
-    ],
+    "question": "घड़ी में 6:00 बजे दोनों सुइयों के बीच कोण कितना होगा?",
+    "options": ["90°", "180°", "120°", "60°"],
     "correctAnswer": 1
   },
   {
     "id": 11,
-    "question": "Complete the series: 2, 6, 12, 20, ?",
-    "options": [
-      "28",
-      "30",
-      "32",
-      "36"
-    ],
+    "question": "श्रृंखला पूरी करें: 2, 6, 12, 20, ?",
+    "options": ["28", "30", "32", "36"],
     "correctAnswer": 1
   },
   {
     "id": 12,
-    "question": "Odd word out",
-    "options": [
-      "Lion",
-      "Tiger",
-      "Elephant",
-      "Cat"
-    ],
+    "question": "विषम शब्द चुनिए",
+    "options": ["शेर", "बाघ", "हाथी", "बिल्ली"],
     "correctAnswer": 3
   },
   {
     "id": 13,
-    "question": "If SOUTH = TPUUI, then NORTH = ?",
-    "options": [
-      "OPSUI",
-      "OPSUII",
-      "OPSUIF",
-      "OQSUJ"
-    ],
+    "question": "यदि SOUTH = TPUUI है, तो NORTH = ?",
+    "options": ["OPSUI", "OPSUII", "OPSUIF", "OQSUJ"],
     "correctAnswer": 0
   },
   {
     "id": 14,
-    "question": "Rahul is taller than Mohan. Mohan is taller than Sohan. Who is the shortest?",
-    "options": [
-      "Rahul",
-      "Mohan",
-      "Sohan",
-      "Cannot be determined"
-    ],
+    "question": "राहुल, मोहन से लंबा है। मोहन, सोहन से लंबा है। सबसे छोटा कौन है?",
+    "options": ["राहुल", "मोहन", "सोहन", "पता नहीं"],
     "correctAnswer": 2
   },
   {
     "id": 15,
-    "question": "If Monday is the first day, which day is the third day after Monday?",
-    "options": [
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
+    "question": "यदि सोमवार के बाद तीसरा दिन कौन-सा होगा?",
+    "options": ["मंगलवार", "बुधवार", "गुरुवार", "शुक्रवार"],
     "correctAnswer": 2
   },
   {
     "id": 16,
-    "question": "Complete the series: Z, X, U, Q, ?",
-    "options": [
-      "M",
-      "L",
-      "N",
-      "O"
-    ],
+    "question": "श्रृंखला पूरी करें: Z, X, U, Q, ?",
+    "options": ["M", "L", "N", "O"],
     "correctAnswer": 1
   },
   {
     "id": 17,
-    "question": "If all faces of a cube are different colors, how many opposite face pairs are there?",
-    "options": [
-      "6",
-      "3",
-      "4",
-      "2"
-    ],
+    "question": "यदि किसी घन के सभी फलकों के रंग अलग-अलग हैं, तो विपरीत फलकों के कितने जोड़े होंगे?",
+    "options": ["6", "3", "4", "2"],
     "correctAnswer": 1
   },
   {
     "id": 18,
-    "question": "Odd shape out",
-    "options": [
-      "Square",
-      "Rectangle",
-      "Triangle",
-      "Circle"
-    ],
+    "question": "विषम आकृति चुनिए",
+    "options": ["वर्ग", "आयत", "त्रिभुज", "गोला"],
     "correctAnswer": 3
   },
   {
     "id": 19,
-    "question": "If 15 August is Friday, what day is 22 August?",
-    "options": [
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
+    "question": "यदि 15 अगस्त शुक्रवार है, तो 22 अगस्त कौन-सा दिन होगा?",
+    "options": ["गुरुवार", "शुक्रवार", "शनिवार", "रविवार"],
     "correctAnswer": 1
   },
   {
     "id": 20,
-    "question": "If MANGO = NBOHP, then APPLE = ?",
-    "options": [
-      "BQQMF",
-      "BQQLE",
-      "CPPMF",
-      "APPMF"
-    ],
+    "question": "यदि MANGO = NBOHP, तो APPLE = ?",
+    "options": ["BQQMF", "BQQLE", "CPPMF", "APPMF"],
     "correctAnswer": 0
   },
   {
     "id": 21,
-    "question": "Complete the series: 1, 4, 9, 16, ?",
-    "options": [
-      "20",
-      "25",
-      "30",
-      "36"
-    ],
+    "question": "श्रृंखला पूरी करें: 1, 4, 9, 16, ?",
+    "options": ["20", "25", "30", "36"],
     "correctAnswer": 1
   },
   {
     "id": 22,
-    "question": "If A is B's brother and B is C's sister, what is A's relation to C?",
-    "options": [
-      "Brother",
-      "Sister",
-      "Father",
-      "Cannot be determined"
-    ],
+    "question": "यदि A, B का भाई है और B, C की बहन है, तो A का C से क्या संबंध है?",
+    "options": ["भाई", "बहन", "पिता", "निश्चित नहीं"],
     "correctAnswer": 3
   },
   {
     "id": 23,
-    "question": "Odd number out",
-    "options": [
-      "14",
-      "18",
-      "21",
-      "28"
-    ],
+    "question": "विषम संख्या चुनिए",
+    "options": ["14", "18", "21", "28"],
     "correctAnswer": 2
   },
   {
     "id": 24,
-    "question": "If west is the opposite of east, then the opposite of north is?",
-    "options": [
-      "West",
-      "South",
-      "East",
-      "North"
-    ],
+    "question": "यदि पश्चिम, पूर्व का विपरीत है, तो उत्तर का विपरीत क्या होगा?",
+    "options": ["पूर्व", "दक्षिण", "पश्चिम", "उत्तर"],
     "correctAnswer": 1
   },
   {
     "id": 25,
-    "question": "If all lotus are flowers and all flowers are plants, then which statement is true?",
-    "options": [
-      "All lotus are plants",
-      "All plants are lotus",
-      "Some plants are not lotus",
-      "No conclusion"
-    ],
+    "question": "यदि सभी कमल फूल हैं और सभी फूल पौधे हैं, तो कौन-सा कथन सही है?",
+    "options": ["सभी कमल पौधे हैं", "सभी पौधे कमल हैं", "कुछ पौधे कमल नहीं हैं", "कोई निष्कर्ष नहीं"],
     "correctAnswer": 0
   },
   {
     "id": 26,
-    "question": "Complete the series: 4, 9, 19, 39, ?",
-    "options": [
-      "78",
-      "79",
-      "80",
-      "81"
-    ],
+    "question": "श्रृंखला पूरी करें: 4, 9, 19, 39, ?",
+    "options": ["78", "79", "80", "81"],
     "correctAnswer": 1
   },
   {
     "id": 27,
-    "question": "If DOG = FQI, then CAT = ?",
-    "options": [
-      "DBU",
-      "ECV",
-      "FCW",
-      "EDU"
-    ],
+    "question": "यदि DOG = FQI, तो CAT = ?",
+    "options": ["DBU", "ECV", "FCW", "EDU"],
     "correctAnswer": 1
   },
   {
     "id": 28,
-    "question": "Odd word out",
-    "options": [
-      "Delhi",
-      "Mumbai",
-      "Chennai",
-      "Nepal"
-    ],
+    "question": "विषम शब्द चुनिए",
+    "options": ["दिल्ली", "मुंबई", "चेन्नई", "नेपाल"],
     "correctAnswer": 3
   },
   {
     "id": 29,
-    "question": "If all mangoes are fruits and some fruits are sweet, then what can be concluded?",
-    "options": [
-      "All mangoes are sweet",
-      "Some mangoes are sweet",
-      "No conclusion",
-      "All sweet fruits are mangoes"
-    ],
+    "question": "यदि सभी आम फल हैं और कुछ फल मीठे हैं, तो क्या निष्कर्ष निकलेगा?",
+    "options": ["सभी आम मीठे हैं", "कुछ आम मीठे हैं", "कोई निष्कर्ष नहीं", "सभी मीठे फल आम हैं"],
     "correctAnswer": 2
   },
   {
     "id": 30,
-    "question": "Ravi is facing south. He turns left. Which direction is he facing now?",
-    "options": [
-      "East",
-      "West",
-      "North",
-      "South"
-    ],
+    "question": "रवि दक्षिण की ओर मुख करके खड़ा है। वह बाएँ मुड़ता है। अब वह किस दिशा में है?",
+    "options": ["पूर्व", "पश्चिम", "उत्तर", "दक्षिण"],
     "correctAnswer": 0
   },
   {
     "id": 31,
-    "question": "If A=1, B=2 ... Z=26, then AIR = ?",
-    "options": [
-      "27",
-      "28",
-      "29",
-      "30"
-    ],
+    "question": "यदि A=1, B=2 ... Z=26, तो AIR = ?",
+    "options": ["27", "28", "29", "30"],
     "correctAnswer": 1
   },
   {
     "id": 32,
-    "question": "Complete the series: B, E, H, K, ?",
-    "options": [
-      "M",
-      "N",
-      "O",
-      "P"
-    ],
+    "question": "श्रृंखला पूरी करें: B, E, H, K, ?",
+    "options": ["M", "N", "O", "P"],
     "correctAnswer": 1
   },
   {
     "id": 33,
-    "question": "Odd number out",
-    "options": [
-      "64",
-      "81",
-      "100",
-      "110"
-    ],
+    "question": "विषम संख्या चुनिए",
+    "options": ["64", "81", "100", "110"],
     "correctAnswer": 3
   },
   {
     "id": 34,
-    "question": "If PAPER = QBQFS, then BOOK = ?",
-    "options": [
-      "CPPL",
-      "CQQM",
-      "CPNL",
-      "CPOL"
-    ],
+    "question": "यदि PAPER = QBQFS, तो BOOK = ?",
+    "options": ["CPPL", "CQQM", "CPNL", "CPOL"],
     "correctAnswer": 0
   },
   {
     "id": 35,
-    "question": "What is the angle at 9:00 on a clock?",
-    "options": [
-      "90 degrees",
-      "120 degrees",
-      "180 degrees",
-      "60 degrees"
-    ],
+    "question": "घड़ी में 9:00 बजे कोण कितना होगा?",
+    "options": ["90°", "120°", "180°", "60°"],
     "correctAnswer": 0
   },
   {
     "id": 36,
-    "question": "Complete the series: 7, 14, 28, 56, ?",
-    "options": [
-      "98",
-      "112",
-      "120",
-      "124"
-    ],
+    "question": "श्रृंखला पूरी करें: 7, 14, 28, 56, ?",
+    "options": ["98", "112", "120", "124"],
     "correctAnswer": 1
   },
   {
     "id": 37,
-    "question": "If A is the father of B and B is C's sister, what is A's relation to C?",
-    "options": [
-      "Brother",
-      "Father",
-      "Uncle",
-      "Grandfather"
-    ],
+    "question": "यदि A, B का पिता है और B, C की बहन है, तो A का C से क्या संबंध है?",
+    "options": ["भाई", "पिता", "चाचा", "दादा"],
     "correctAnswer": 1
   },
   {
     "id": 38,
-    "question": "Odd shape out",
-    "options": [
-      "Square",
-      "Rectangle",
-      "Pentagon",
-      "Circle"
-    ],
+    "question": "विषम आकृति चुनिए",
+    "options": ["वर्ग", "आयत", "पंचभुज", "गोला"],
     "correctAnswer": 3
   },
   {
     "id": 39,
-    "question": "If today is Wednesday, what day will it be after 10 days?",
-    "options": [
-      "Friday",
-      "Saturday",
-      "Sunday",
-      "Monday"
-    ],
+    "question": "यदि आज बुधवार है, तो 10 दिन बाद कौन-सा दिन होगा?",
+    "options": ["शुक्रवार", "शनिवार", "रविवार", "सोमवार"],
     "correctAnswer": 1
   },
   {
     "id": 40,
-    "question": "If APPLE = BQQMF, then MANGO = ?",
-    "options": [
-      "NBOHP",
-      "NCPHP",
-      "OCPHQ",
-      "NBPHP"
-    ],
+    "question": "यदि APPLE = BQQMF, तो MANGO = ?",
+    "options": ["NBOHP", "NCPHP", "OCPHQ", "NBPHP"],
     "correctAnswer": 0
   },
   {
     "id": 41,
-    "question": "Complete the series: 1, 8, 27, 64, ?",
-    "options": [
-      "100",
-      "121",
-      "125",
-      "144"
-    ],
+    "question": "श्रृंखला पूरी करें: 1, 8, 27, 64, ?",
+    "options": ["100", "121", "125", "144"],
     "correctAnswer": 2
   },
   {
     "id": 42,
-    "question": "Odd word out",
-    "options": [
-      "Dog",
-      "Cat",
-      "Cow",
-      "Crow"
-    ],
+    "question": "विषम शब्द चुनिए",
+    "options": ["कुत्ता", "बिल्ली", "गाय", "कौआ"],
     "correctAnswer": 3
   },
   {
     "id": 43,
-    "question": "If east is to the right, then north is to which side?",
-    "options": [
-      "Left",
-      "Front",
-      "Back",
-      "Right"
-    ],
+    "question": "यदि पूर्व दाईं ओर है, तो उत्तर किस ओर होगा?",
+    "options": ["बाईं ओर", "सामने", "पीछे", "दाईं ओर"],
     "correctAnswer": 0
   },
   {
     "id": 44,
-    "question": "If all soldiers are brave and some brave people are players, what can be concluded?",
-    "options": [
-      "All players are soldiers",
-      "Some players are soldiers",
-      "No conclusion",
-      "All soldiers are players"
-    ],
+    "question": "यदि सभी सैनिक बहादुर हैं और कुछ बहादुर खिलाड़ी हैं, तो क्या निष्कर्ष निकलेगा?",
+    "options": ["सभी खिलाड़ी सैनिक हैं", "कुछ खिलाड़ी सैनिक हैं", "कोई निष्कर्ष नहीं", "सभी सैनिक खिलाड़ी हैं"],
     "correctAnswer": 2
   },
   {
     "id": 45,
-    "question": "Complete the series: Z, W, S, N, ?",
-    "options": [
-      "H",
-      "I",
-      "G",
-      "F"
-    ],
-    "correctAnswer": 0
+    "question": "श्रृंखला पूरी करें: Z, W, S, N, ?",
+    "options": ["H", "I", "G", "F"],
+    "correctAnswer": 1
   },
   {
     "id": 46,
-    "question": "If a cube has 6 faces, how many edges does it have?",
-    "options": [
-      "8",
-      "10",
-      "12",
-      "14"
-    ],
+    "question": "यदि किसी घन के 6 फलक हैं, तो उसके कुल किनारे कितने होंगे?",
+    "options": ["8", "10", "12", "14"],
     "correctAnswer": 2
   },
   {
     "id": 47,
-    "question": "Odd number out",
-    "options": [
-      "18",
-      "24",
-      "30",
-      "35"
-    ],
+    "question": "विषम संख्या चुनिए",
+    "options": ["18", "24", "30", "35"],
     "correctAnswer": 3
   },
   {
     "id": 48,
-    "question": "If Monday is the first day, what is the fifth day after Monday?",
-    "options": [
-      "Friday",
-      "Saturday",
-      "Sunday",
-      "Thursday"
-    ],
+    "question": "यदि सोमवार के बाद पाँचवाँ दिन है, तो कौन-सा दिन होगा?",
+    "options": ["शुक्रवार", "शनिवार", "रविवार", "गुरुवार"],
     "correctAnswer": 1
   },
   {
     "id": 49,
-    "question": "If SUN = TVO, then MOON = ?",
-    "options": [
-      "NPPO",
-      "NQPO",
-      "NPPOF",
-      "MPOO"
-    ],
-    "correctAnswer": 0
+    "question": "यदि SUN = TVO, तो MOON = ?",
+    "options": ["ABCD", "WXYZ", "PQRS", "NPPO"],
+    "correctAnswer": 3
   },
   {
     "id": 50,
-    "question": "Complete the series: 11, 22, 44, 88, ?",
-    "options": [
-      "154",
-      "166",
-      "176",
-      "177"
-    ],
+    "question": "श्रृंखला पूरी करें: 11, 22, 44, 88, ?",
+    "options": ["154", "166", "176", "177"],
     "correctAnswer": 2
   }
 ]
