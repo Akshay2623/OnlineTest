@@ -1,0 +1,6 @@
+node_modules/
+dist/
+vite-run.log
+vite-output.log
+vite-error.log
+.DS_Store
