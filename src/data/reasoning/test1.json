@@ -1,6 +1,552 @@
 [
-  { "id": 1, "question": "Find the next number in the series: 2, 4, 8, 16, ?", "options": ["18", "24", "32", "36"], "correctAnswer": 2 },
-  { "id": 2, "question": "Odd one out: Apple, Mango, Carrot, Banana", "options": ["Apple", "Mango", "Carrot", "Banana"], "correctAnswer": 2 },
-  { "id": 3, "question": "If PENCIL is coded as QFODJM, how is PAPER coded?", "options": ["QBQFS", "QBQFS", "QBQFS", "QBSFS"], "correctAnswer": 3 },
-  { "id": 4, "question": "Find the missing term: A, C, E, G, ?", "options": ["H", "I", "J", "K"], "correctAnswer": 1 }
+  {
+    "id": 1,
+    "question": "If PEN is coded as QFO, then BOOK is coded as?",
+    "options": [
+      "CPPL",
+      "CPNL",
+      "DQPL",
+      "BQQL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "question": "Complete the series: 3, 7, 15, 31, ?",
+    "options": [
+      "61",
+      "62",
+      "63",
+      "64"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "question": "Odd one out: Apple, Kela, Gajar, Amrud",
+    "options": [
+      "Apple",
+      "Kela",
+      "Gajar",
+      "Amrud"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "question": "If all doctors are honest and some honest people are players, what can be concluded?",
+    "options": [
+      "All players are doctors",
+      "Some players are doctors",
+      "No conclusion",
+      "All doctors are players"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "question": "Ravi walks 20 meters north, then turns right and walks 15 meters. Which direction is he facing now?",
+    "options": [
+      "North",
+      "South",
+      "East",
+      "West"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 6,
+    "question": "If A=1, B=2, C=3... then DOG = ?",
+    "options": [
+      "26",
+      "24",
+      "25",
+      "27"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 7,
+    "question": "Complete the series: A, D, G, J, ?",
+    "options": [
+      "L",
+      "M",
+      "N",
+      "O"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "question": "Odd number out",
+    "options": [
+      "16",
+      "25",
+      "36",
+      "45"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 9,
+    "question": "If CAT = DBU, then BAT = ?",
+    "options": [
+      "CBU",
+      "DBU",
+      "CBT",
+      "DCU"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "question": "What is the angle between the hands of a clock at 6:00?",
+    "options": [
+      "90 degrees",
+      "180 degrees",
+      "120 degrees",
+      "60 degrees"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 11,
+    "question": "Complete the series: 2, 6, 12, 20, ?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "36"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 12,
+    "question": "Odd word out",
+    "options": [
+      "Lion",
+      "Tiger",
+      "Elephant",
+      "Cat"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 13,
+    "question": "If SOUTH = TPUUI, then NORTH = ?",
+    "options": [
+      "OPSUI",
+      "OPSUII",
+      "OPSUIF",
+      "OQSUJ"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "question": "Rahul is taller than Mohan. Mohan is taller than Sohan. Who is the shortest?",
+    "options": [
+      "Rahul",
+      "Mohan",
+      "Sohan",
+      "Cannot be determined"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "If Monday is the first day, which day is the third day after Monday?",
+    "options": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 16,
+    "question": "Complete the series: Z, X, U, Q, ?",
+    "options": [
+      "M",
+      "L",
+      "N",
+      "O"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "question": "If all faces of a cube are different colors, how many opposite face pairs are there?",
+    "options": [
+      "6",
+      "3",
+      "4",
+      "2"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "question": "Odd shape out",
+    "options": [
+      "Square",
+      "Rectangle",
+      "Triangle",
+      "Circle"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 19,
+    "question": "If 15 August is Friday, what day is 22 August?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 20,
+    "question": "If MANGO = NBOHP, then APPLE = ?",
+    "options": [
+      "BQQMF",
+      "BQQLE",
+      "CPPMF",
+      "APPMF"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "question": "Complete the series: 1, 4, 9, 16, ?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "36"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 22,
+    "question": "If A is B's brother and B is C's sister, what is A's relation to C?",
+    "options": [
+      "Brother",
+      "Sister",
+      "Father",
+      "Cannot be determined"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 23,
+    "question": "Odd number out",
+    "options": [
+      "14",
+      "18",
+      "21",
+      "28"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 24,
+    "question": "If west is the opposite of east, then the opposite of north is?",
+    "options": [
+      "West",
+      "South",
+      "East",
+      "North"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 25,
+    "question": "If all lotus are flowers and all flowers are plants, then which statement is true?",
+    "options": [
+      "All lotus are plants",
+      "All plants are lotus",
+      "Some plants are not lotus",
+      "No conclusion"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 26,
+    "question": "Complete the series: 4, 9, 19, 39, ?",
+    "options": [
+      "78",
+      "79",
+      "80",
+      "81"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 27,
+    "question": "If DOG = FQI, then CAT = ?",
+    "options": [
+      "DBU",
+      "ECV",
+      "FCW",
+      "EDU"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 28,
+    "question": "Odd word out",
+    "options": [
+      "Delhi",
+      "Mumbai",
+      "Chennai",
+      "Nepal"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 29,
+    "question": "If all mangoes are fruits and some fruits are sweet, then what can be concluded?",
+    "options": [
+      "All mangoes are sweet",
+      "Some mangoes are sweet",
+      "No conclusion",
+      "All sweet fruits are mangoes"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 30,
+    "question": "Ravi is facing south. He turns left. Which direction is he facing now?",
+    "options": [
+      "East",
+      "West",
+      "North",
+      "South"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 31,
+    "question": "If A=1, B=2 ... Z=26, then AIR = ?",
+    "options": [
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 32,
+    "question": "Complete the series: B, E, H, K, ?",
+    "options": [
+      "M",
+      "N",
+      "O",
+      "P"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 33,
+    "question": "Odd number out",
+    "options": [
+      "64",
+      "81",
+      "100",
+      "110"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 34,
+    "question": "If PAPER = QBQFS, then BOOK = ?",
+    "options": [
+      "CPPL",
+      "CQQM",
+      "CPNL",
+      "CPOL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 35,
+    "question": "What is the angle at 9:00 on a clock?",
+    "options": [
+      "90 degrees",
+      "120 degrees",
+      "180 degrees",
+      "60 degrees"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 36,
+    "question": "Complete the series: 7, 14, 28, 56, ?",
+    "options": [
+      "98",
+      "112",
+      "120",
+      "124"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 37,
+    "question": "If A is the father of B and B is C's sister, what is A's relation to C?",
+    "options": [
+      "Brother",
+      "Father",
+      "Uncle",
+      "Grandfather"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 38,
+    "question": "Odd shape out",
+    "options": [
+      "Square",
+      "Rectangle",
+      "Pentagon",
+      "Circle"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 39,
+    "question": "If today is Wednesday, what day will it be after 10 days?",
+    "options": [
+      "Friday",
+      "Saturday",
+      "Sunday",
+      "Monday"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 40,
+    "question": "If APPLE = BQQMF, then MANGO = ?",
+    "options": [
+      "NBOHP",
+      "NCPHP",
+      "OCPHQ",
+      "NBPHP"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 41,
+    "question": "Complete the series: 1, 8, 27, 64, ?",
+    "options": [
+      "100",
+      "121",
+      "125",
+      "144"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 42,
+    "question": "Odd word out",
+    "options": [
+      "Dog",
+      "Cat",
+      "Cow",
+      "Crow"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 43,
+    "question": "If east is to the right, then north is to which side?",
+    "options": [
+      "Left",
+      "Front",
+      "Back",
+      "Right"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 44,
+    "question": "If all soldiers are brave and some brave people are players, what can be concluded?",
+    "options": [
+      "All players are soldiers",
+      "Some players are soldiers",
+      "No conclusion",
+      "All soldiers are players"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 45,
+    "question": "Complete the series: Z, W, S, N, ?",
+    "options": [
+      "H",
+      "I",
+      "G",
+      "F"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 46,
+    "question": "If a cube has 6 faces, how many edges does it have?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 47,
+    "question": "Odd number out",
+    "options": [
+      "18",
+      "24",
+      "30",
+      "35"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 48,
+    "question": "If Monday is the first day, what is the fifth day after Monday?",
+    "options": [
+      "Friday",
+      "Saturday",
+      "Sunday",
+      "Thursday"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 49,
+    "question": "If SUN = TVO, then MOON = ?",
+    "options": [
+      "NPPO",
+      "NQPO",
+      "NPPOF",
+      "MPOO"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 50,
+    "question": "Complete the series: 11, 22, 44, 88, ?",
+    "options": [
+      "154",
+      "166",
+      "176",
+      "177"
+    ],
+    "correctAnswer": 2
+  }
 ]

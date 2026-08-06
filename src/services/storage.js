@@ -1,4 +1,5 @@
 import { seedDb } from '../data/seedData.js';
+import reasoningTest1Questions from '../data/reasoning/test1.json';
 
 const DB_KEY = 'online-test-portal:db';
 const ATTEMPTS_KEY = 'online-test-portal:attempts';
@@ -25,10 +26,42 @@ function saveJson(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
+function normalizeQuestions(categoryId, testId, questions) {
+  return questions.map((question, index) => ({
+    id: `${categoryId}-${testId}-${question.id ?? index + 1}`,
+    categoryId,
+    testId: `${categoryId}-${testId}`,
+    question: question.question,
+    options: [...(question.options || [])].slice(0, 4),
+    correctAnswer: Number(question.correctAnswer ?? 0),
+    marks: Number(question.marks ?? 1),
+    negativeMarks: Number(question.negativeMarks ?? 0.25),
+    image: question.image || '',
+    explanation: question.explanation || '',
+  }));
+}
+
+function migrateReasoningTest1(db) {
+  const seededTest = seedDb.tests.find((test) => test.id === 'reasoning-test1');
+  if (!seededTest) {
+    return db;
+  }
+
+  db.tests = db.tests.map((test) => (test.id === seededTest.id ? { ...seededTest } : test));
+  const migratedQuestions = normalizeQuestions('reasoning', 'test1', reasoningTest1Questions);
+  db.questions = [
+    ...db.questions.filter((question) => question.testId !== 'reasoning-test1'),
+    ...migratedQuestions,
+  ];
+  return db;
+}
+
 export function ensureDb() {
   const existing = loadJson(DB_KEY, null);
   if (existing?.categories && existing?.tests && existing?.questions) {
-    return existing;
+    const migrated = migrateReasoningTest1(existing);
+    saveJson(DB_KEY, migrated);
+    return migrated;
   }
 
   saveJson(DB_KEY, seedDb);
