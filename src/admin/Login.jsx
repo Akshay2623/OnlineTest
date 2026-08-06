@@ -4,8 +4,8 @@ import { loginAdmin } from '../services/auth.js';
 
 export default function AdminLogin() {
   const navigate = useNavigate();
-  const [username, setUsername] = useState('admin');
-  const [password, setPassword] = useState('admin123');
+  const [username, setUsername] = useState('AkshayJangid01');
+  const [password, setPassword] = useState('Akshay@2004');
   const [error, setError] = useState('');
 
   function handleSubmit(event) {
@@ -42,7 +42,7 @@ export default function AdminLogin() {
         </form>
 
         <div className="login-note">
-          Default credentials: <strong>admin / admin123</strong>
+          Default credentials: <strong>AkshayJangid01 / Akshay@2004</strong>
         </div>
       </div>
     </div>
