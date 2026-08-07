@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import ResultCard from '../components/ResultCard.jsx';
-import { getAttemptById } from '../services/storage.js';
+import { getAttemptById, getAttemptByIdRemote } from '../services/storage.js';
 import { getQuestionStatus } from '../utils/scoring.js';
 
 function getLetter(index) {
@@ -75,7 +75,45 @@ export default function Result() {
   const location = useLocation();
   const navigate = useNavigate();
   const { attemptId } = useParams();
-  const result = location.state?.result ?? getAttemptById(attemptId);
+  const [result, setResult] = useState(location.state?.result ?? getAttemptById(attemptId));
+  const [loading, setLoading] = useState(!result);
+
+  useEffect(() => {
+    let alive = true;
+
+    async function loadRemoteResult() {
+      if (result || !attemptId) {
+        setLoading(false);
+        return;
+      }
+
+      setLoading(true);
+      const remoteResult = await getAttemptByIdRemote(attemptId);
+      if (alive && remoteResult) {
+        setResult(remoteResult);
+      }
+      if (alive) {
+        setLoading(false);
+      }
+    }
+
+    loadRemoteResult();
+
+    return () => {
+      alive = false;
+    };
+  }, [attemptId, result]);
+
+  if (loading) {
+    return (
+      <div className="container page">
+        <div className="empty-state">
+          <h2>Loading result...</h2>
+          <p>Please wait while we fetch the attempt.</p>
+        </div>
+      </div>
+    );
+  }
 
   if (!result) {
     return (

@@ -1,6 +1,306 @@
 [
-  { "id": 1, "question": "A man faces north and turns right, then right again. Which direction is he facing now?", "options": ["North", "East", "South", "West"], "correctAnswer": 2 },
-  { "id": 2, "question": "Find the next term: 1, 3, 6, 10, ?", "options": ["13", "14", "15", "16"], "correctAnswer": 2 },
-  { "id": 3, "question": "Which pair is similar? Pen : Write", "options": ["Knife : Cut", "Book : Read", "Cup : Drink", "All of these"], "correctAnswer": 3 },
-  { "id": 4, "question": "Find the missing number: 5, 10, 20, 40, ?", "options": ["60", "70", "80", "90"], "correctAnswer": 2 }
+  {
+    "id": 1,
+    "question": "कोडिंग-डिकोडिंग: यदि BRIGHT = CTKJHW है, तो SHINE = ?",
+    "options": ["TIJOF", "TIKOG", "TIKPF", "TJKOG"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "question": "संख्या श्रृंखला: 3, 7, 18, 43, 94, ?",
+    "options": ["195", "196", "197", "198"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "question": "समानता: Doctor : Hospital :: Judge : ?",
+    "options": ["School", "Court", "Office", "Jail"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "question": "वर्णमाला श्रृंखला: AZ, BY, CX, DW, ?",
+    "options": ["EV", "FU", "EU", "FV"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "question": "रक्त संबंध: A, B का पुत्र है। C, B की बहन है। D, C का पति है। D का A से क्या संबंध है?",
+    "options": ["चाचा", "मामा", "पिता", "दादा"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "question": "दिशा बोध: एक व्यक्ति उत्तर की ओर 12 मीटर चला, फिर दाएँ 9 मीटर, फिर दाएँ 12 मीटर चला। अब वह प्रारंभिक बिंदु से किस दिशा में है?",
+    "options": ["उत्तर", "दक्षिण", "पूर्व", "पश्चिम"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "question": "कोडिंग-डिकोडिंग: यदि PENCIL → QFODJM, तो ERASER → ?",
+    "options": ["FSBTFS", "FSBTFS", "GTCUGT", "FRBTFS"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "question": "विषम पद",
+    "options": ["Cube", "Sphere", "Cylinder", "Triangle"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 9,
+    "question": "गणितीय तर्क: यदि × का अर्थ +, + का अर्थ ÷, ÷ का अर्थ − तथा − का अर्थ × हो, तो 18 × 6 + 3 ÷ 2 − 4 = ?",
+    "options": ["30", "32", "36", "40"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 10,
+    "question": "क्रम निर्धारण: रवि, अमित से लंबा है। अमित, करण से लंबा है। करण, दीपक से लंबा है। सबसे छोटा कौन है?",
+    "options": ["रवि", "अमित", "करण", "दीपक"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 11,
+    "question": "वेन आरेख: सभी गुलाब फूल हैं। कुछ फूल सुगंधित हैं। निष्कर्ष—",
+    "options": ["सभी गुलाब सुगंधित हैं", "कुछ गुलाब सुगंधित हो सकते हैं", "कोई गुलाब सुगंधित नहीं", "कोई निष्कर्ष नहीं"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 12,
+    "question": "संख्या श्रृंखला: 5, 9, 17, 33, 65, ?",
+    "options": ["129", "130", "131", "132"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 13,
+    "question": "कथन एवं निष्कर्ष: सभी खिलाड़ी स्वस्थ हैं। कुछ स्वस्थ व्यक्ति डॉक्टर हैं। निष्कर्ष—",
+    "options": ["सभी डॉक्टर खिलाड़ी हैं", "कुछ खिलाड़ी डॉक्टर हैं", "कोई निष्कर्ष नहीं", "सभी स्वस्थ खिलाड़ी डॉक्टर हैं"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "question": "घड़ी: 3:40 बजे दोनों सुइयों के बीच का कोण कितना होगा?",
+    "options": ["10°", "20°", "30°", "40°"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "घन एवं पासा: एक घन के विपरीत फलकों का योग हमेशा 7 होता है। यदि ऊपर 2 है और सामने 4 है, तो पीछे कौन-सा अंक होगा?",
+    "options": ["3", "5", "6", "1"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "question": "पहेली: A, B, C, D एक पंक्ति में बैठे हैं। A, B के बाएँ है। C, D के दाएँ है। B सबसे दाएँ नहीं है। सबसे बाएँ कौन है?",
+    "options": ["A", "B", "C", "D"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "question": "वर्णमाला श्रृंखला: ACE, BDF, CEG, ?",
+    "options": ["DFH", "EGI", "DFI", "EFH"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "question": "कैलेंडर: यदि 1 जनवरी सोमवार है, तो 1 मार्च कौन-सा दिन होगा? (सामान्य वर्ष)",
+    "options": ["गुरुवार", "शुक्रवार", "शनिवार", "रविवार"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "question": "कोडिंग-डिकोडिंग: यदि APPLE = CRRNG, तो MANGO = ?",
+    "options": ["OCPIQ", "OCPHQ", "NBOHP", "PDRJR"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 20,
+    "question": "चित्र आधारित प्रश्न",
+    "options": ["A", "B", "C", "D"],
+    "correctAnswer": 0,
+    "explanation": "मूल PDF में यह figure-based प्रश्न है। चित्र अलग से जोड़ना होगा।"
+  },
+  {
+    "id": 21,
+    "question": "चित्र आधारित प्रश्न",
+    "options": ["A", "B", "C", "D"],
+    "correctAnswer": 0,
+    "explanation": "मूल PDF में यह figure-based प्रश्न है। चित्र अलग से जोड़ना होगा।"
+  },
+  {
+    "id": 22,
+    "question": "दर्पण प्रतिबिंब: यदि दर्पण BRAIN के दाईं ओर रखा जाए, तो सही प्रतिबिंब क्या होगा?",
+    "options": ["NIARB", "BRAIN", "RIANB", "NIABR"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 23,
+    "question": "कागज मोड़ना: एक कागज को दो बार मोड़ा गया और एक छेद किया गया। खोलने पर कुल कितने छेद होंगे?",
+    "options": ["2", "4", "6", "8"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 24,
+    "question": "समानता: Bird : Nest :: Lion : ?",
+    "options": ["Cave", "Forest", "Grass", "Tree"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 25,
+    "question": "दिशा बोध: एक व्यक्ति पश्चिम की ओर मुख करके खड़ा है। वह 90° clockwise घुमता है। अब वह किस दिशा में है?",
+    "options": ["उत्तर", "दक्षिण", "पूर्व", "पश्चिम"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 26,
+    "question": "संख्या श्रृंखला: 7, 15, 31, 63, 127, ?",
+    "options": ["252", "254", "255", "256"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 27,
+    "question": "कोडिंग-डिकोडिंग: TRAIN = WUDLQ, तो PLANE = ?",
+    "options": ["SODQH", "SODQG", "SODQF", "TQBOF"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 28,
+    "question": "समानता: Island : Sea :: Oasis : ?",
+    "options": ["Desert", "River", "Forest", "Mountain"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "question": "रक्त संबंध: एक महिला की ओर इशारा करके रमेश ने कहा— \"यह मेरे पिता के इकलौते पुत्र की पत्नी है।\" महिला रमेश से क्या लगती है?",
+    "options": ["माँ", "बहन", "पत्नी", "भाभी"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 30,
+    "question": "दिशा बोध: एक व्यक्ति उत्तर की ओर 15m चला। बाएँ मुड़ा 20m चला। फिर बाएँ मुड़ा 15m चला। अब वह प्रारंभिक बिंदु से कितनी दूरी पर है?",
+    "options": ["10m", "15m", "20m", "25m"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 31,
+    "question": "क्रम निर्धारण: A, B से लंबा है। C, A से छोटा है। D, C से लंबा है। सबसे लंबा कौन है?",
+    "options": ["A", "B", "C", "D"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 32,
+    "question": "वर्णमाला श्रृंखला: A, CE, GIK, MOQS, ?",
+    "options": ["UWYAC", "UWY", "UWYAE", "UVXYZ"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 33,
+    "question": "वेन आरेख: सभी बिल्ली जानवर हैं। कुछ जानवर पालतू हैं। निष्कर्ष—",
+    "options": ["सभी बिल्ली पालतू हैं", "कुछ बिल्ली पालतू हो सकती हैं", "कोई बिल्ली पालतू नहीं", "कोई निष्कर्ष नहीं"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 34,
+    "question": "कथन एवं निष्कर्ष: सभी इंजीनियर पढ़े-लिखे हैं। कुछ पढ़े-लिखे अमीर हैं। निष्कर्ष—",
+    "options": ["सभी अमीर इंजीनियर हैं", "कुछ इंजीनियर अमीर हैं", "कोई निष्कर्ष नहीं", "सभी पढ़े-लिखे इंजीनियर अमीर हैं"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 35,
+    "question": "घड़ी: 4:20 बजे दोनों सुइयों के बीच का कोण कितना होगा?",
+    "options": ["10°", "20°", "30°", "40°"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 36,
+    "question": "कैलेंडर: यदि 15 अगस्त शुक्रवार है, तो 15 सितंबर कौन-सा दिन होगा?",
+    "options": ["रविवार", "सोमवार", "मंगलवार", "बुधवार"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 37,
+    "question": "गणितीय तर्क: यदि • का अर्थ ×, − का अर्थ +, × का अर्थ ÷, ÷ का अर्थ − हो, तो 18 + 6 × 3 ÷ 2 − 4 = ?",
+    "options": ["52", "56", "58", "60"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 38,
+    "question": "पहेली: P, Q, R, S एक पंक्ति में बैठे हैं। P, Q के दाएँ है। R सबसे बाएँ है। S, P के दाएँ है। बीच में कौन बैठा है?",
+    "options": ["P", "Q", "R", "S"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 39,
+    "question": "घन: एक घन में विपरीत फलक 1-6, 2-5, 3-4 हैं। यदि ऊपर 3 है, तो नीचे क्या होगा?",
+    "options": ["1", "2", "4", "6"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 40,
+    "question": "पासा: एक पासे में 1 के सामने 6 और 2 के सामने 5 है। तो 3 के सामने कौन होगा?",
+    "options": ["2", "4", "5", "1"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 41,
+    "question": "विषम पद",
+    "options": ["Pentagon", "Hexagon", "Octagon", "Circle"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 42,
+    "question": "कोडिंग: MANGO = OCPIQ, तो APPLE = ?",
+    "options": ["CRRNG", "CQQMF", "DQQNG", "BQQMF"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 43,
+    "question": "संख्या श्रृंखला: 2, 6, 18, 54, ?",
+    "options": ["108", "152", "162", "216"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 44,
+    "question": "वर्णमाला तर्क: यदि CAT → XZG, तो DOG → ?",
+    "options": ["WLT", "WLT", "WOG", "XLT"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 45,
+    "question": "दर्पण प्रतिबिंब: यदि दर्पण INDIA के दाईं ओर रखा जाए, तो सही प्रतिबिंब क्या होगा?",
+    "options": ["AIDNI", "AIDNI", "INDIA", "ADNII"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 46,
+    "question": "कागज मोड़ना: एक कागज को तीन बार मोड़ा गया और एक छेद किया गया। खोलने पर कुल कितने छेद होंगे?",
+    "options": ["4", "6", "8", "16"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 47,
+    "question": "चित्र आधारित प्रश्न",
+    "options": ["A", "B", "C", "D"],
+    "correctAnswer": 0,
+    "explanation": "मूल PDF में यह figure-based प्रश्न है। चित्र अलग से जोड़ना होगा।"
+  },
+  {
+    "id": 48,
+    "question": "चित्र आधारित प्रश्न",
+    "options": ["A", "B", "C", "D"],
+    "correctAnswer": 0,
+    "explanation": "मूल PDF में यह figure-based प्रश्न है। चित्र अलग से जोड़ना होगा।"
+  },
+  {
+    "id": 49,
+    "question": "दिशा बोध: पूर्व की ओर मुख करके खड़े व्यक्ति ने 90° anti-clockwise और फिर 180° clockwise घुमाव किया। अब उसका मुख किस दिशा में है?",
+    "options": ["उत्तर", "दक्षिण", "पूर्व", "पश्चिम"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 50,
+    "question": "मिश्रित तर्क: यदि A > B, B = C और C < D, तो निश्चित रूप से सही क्या होगा?",
+    "options": ["A > D", "D > A", "A > C", "D < C"],
+    "correctAnswer": 2
+  }
 ]

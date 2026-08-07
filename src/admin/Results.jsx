@@ -1,5 +1,12 @@
-import React, { useMemo, useState } from 'react';
-import { deleteAttempt, getAttempts, getCategories, getTestsByCategory } from '../services/storage.js';
+import React, { useEffect, useMemo, useState } from 'react';
+import {
+  deleteAttempt,
+  getAttempts,
+  getCategories,
+  getTestsByCategory,
+  isRemoteResultsEnabled,
+  refreshAttemptsFromRemote,
+} from '../services/storage.js';
 import { downloadExcel } from '../services/export.js';
 
 function ResultModal({ attempt, onClose }) {
@@ -75,7 +82,42 @@ export default function AdminResults() {
   const [dateFilter, setDateFilter] = useState('');
   const [selectedAttempt, setSelectedAttempt] = useState(null);
   const [version, setVersion] = useState(0);
-  const attempts = useMemo(() => getAttempts(), [version]);
+  const [attempts, setAttempts] = useState(() => getAttempts());
+
+  useEffect(() => {
+    let alive = true;
+
+    function handleAttemptsChanged() {
+      setAttempts(getAttempts());
+      setVersion((value) => value + 1);
+    }
+
+    async function syncRemoteAttempts() {
+      if (!isRemoteResultsEnabled()) {
+        return;
+      }
+
+      const remoteAttempts = await refreshAttemptsFromRemote();
+      if (alive && Array.isArray(remoteAttempts)) {
+        setAttempts(remoteAttempts);
+        setVersion((value) => value + 1);
+      }
+    }
+
+    syncRemoteAttempts();
+    window.addEventListener('online-test-portal:attempts-changed', handleAttemptsChanged);
+    window.addEventListener('storage', handleAttemptsChanged);
+    const interval = isRemoteResultsEnabled() ? window.setInterval(syncRemoteAttempts, 5000) : null;
+
+    return () => {
+      alive = false;
+      window.removeEventListener('online-test-portal:attempts-changed', handleAttemptsChanged);
+      window.removeEventListener('storage', handleAttemptsChanged);
+      if (interval) {
+        window.clearInterval(interval);
+      }
+    };
+  }, []);
 
   const filtered = useMemo(() => {
     return attempts.filter((attempt) => {

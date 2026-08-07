@@ -43,8 +43,8 @@ function normalizeQuestions(categoryId, testId, questions) {
     correctAnswer: question.correctAnswer,
     marks: 1,
     negativeMarks: 0.25,
-    image: '',
-    explanation: '',
+    image: question.image || '',
+    explanation: question.explanation || '',
   }));
 }
 
@@ -98,7 +98,7 @@ export const seedDb = {
     createTest('math', 'test2', 'Test 2', 'Math practice set 2', 8, mathTest2),
     createTest('math', 'test3', 'Test 3', 'Math practice set 3', 8, mathTest3),
     createTest('reasoning', 'test1', 'Test 1', 'Reasoning practice set 1', 40, reasoningTest1),
-    createTest('reasoning', 'test2', 'Test 2', 'Reasoning practice set 2', 8, reasoningTest2),
+    createTest('reasoning', 'test2', 'Test 2', 'Reasoning practice set 2', 30, reasoningTest2),
     createTest('reasoning', 'test3', 'Test 3', 'Reasoning practice set 3', 8, reasoningTest3),
     createTest('gk', 'test1', 'Test 1', 'GK practice set 1', 8, gkTest1),
     createTest('gk', 'test2', 'Test 2', 'GK practice set 2', 8, gkTest2),

@@ -1,9 +1,12 @@
 import { seedDb } from '../data/seedData.js';
 import reasoningTest1Questions from '../data/reasoning/test1.json';
+import reasoningTest2Questions from '../data/reasoning/test2.json';
 
 const DB_KEY = 'online-test-portal:db';
 const ATTEMPTS_KEY = 'online-test-portal:attempts';
 const RESULT_PREFIX = 'online-test-portal:result:';
+const ATTEMPTS_CHANGED_EVENT = 'online-test-portal:attempts-changed';
+const REMOTE_DEFAULT_TABLE = 'attempt_results';
 
 function clone(value) {
   return JSON.parse(JSON.stringify(value));
@@ -24,6 +27,195 @@ function loadJson(key, fallback) {
 
 function saveJson(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
+}
+
+function notifyAttemptsChanged() {
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new Event(ATTEMPTS_CHANGED_EVENT));
+  }
+}
+
+function getRemoteConfig() {
+  const baseUrl = import.meta.env.VITE_RESULTS_API_URL || import.meta.env.VITE_SUPABASE_URL || '';
+  const apiKey = import.meta.env.VITE_RESULTS_API_KEY || import.meta.env.VITE_SUPABASE_ANON_KEY || '';
+  const table = import.meta.env.VITE_RESULTS_TABLE || REMOTE_DEFAULT_TABLE;
+
+  if (!baseUrl || !apiKey) {
+    return null;
+  }
+
+  return {
+    baseUrl: `${String(baseUrl).replace(/\/$/, '')}/rest/v1/${table}`,
+    apiKey,
+  };
+}
+
+export function isRemoteResultsEnabled() {
+  return Boolean(getRemoteConfig());
+}
+
+function remoteHeaders(apiKey, extra = {}) {
+  return {
+    apikey: apiKey,
+    Authorization: `Bearer ${apiKey}`,
+    ...extra,
+  };
+}
+
+function toRemoteRow(attempt) {
+  return {
+    id: attempt.id,
+    student_name: attempt.studentName || '',
+    category_id: attempt.categoryId || '',
+    category_name: attempt.categoryName || '',
+    test_id: attempt.testId || '',
+    test_name: attempt.testName || '',
+    submitted_at: attempt.submittedAt || new Date().toISOString().slice(0, 10),
+    payload: attempt,
+  };
+}
+
+function fromRemoteRow(row) {
+  if (!row) {
+    return null;
+  }
+
+  if (row.payload && typeof row.payload === 'object') {
+    return row.payload;
+  }
+
+  return {
+    id: row.id,
+    attemptId: row.id,
+    studentName: row.student_name || 'Guest',
+    categoryId: row.category_id || '',
+    categoryName: row.category_name || '',
+    testId: row.test_id || '',
+    testName: row.test_name || '',
+    submittedAt: row.submitted_at || '',
+    startTime: row.start_time || '',
+    endTime: row.end_time || '',
+    durationTakenSeconds: Number(row.duration_taken_seconds || 0),
+    durationTakenLabel: row.duration_taken_label || '',
+    durationMinutes: Number(row.duration_minutes || 0),
+    questions: Array.isArray(row.questions) ? row.questions : [],
+    selectedAnswers: Array.isArray(row.selected_answers) ? row.selected_answers : [],
+    summary: row.summary || null,
+  };
+}
+
+function sortAttemptsDesc(attempts) {
+  return [...attempts].sort((a, b) => {
+    const left = new Date(b.submittedAt || b.endTime || 0).getTime();
+    const right = new Date(a.submittedAt || a.endTime || 0).getTime();
+    return left - right;
+  });
+}
+
+function mergeAttempts(...sources) {
+  const map = new Map();
+  sources.flat().forEach((attempt) => {
+    if (attempt?.id) {
+      map.set(attempt.id, attempt);
+    }
+  });
+  return sortAttemptsDesc(Array.from(map.values()));
+}
+
+function cacheAttempts(attempts) {
+  saveJson(ATTEMPTS_KEY, attempts);
+  attempts.forEach((attempt) => {
+    saveJson(`${RESULT_PREFIX}${attempt.id}`, attempt);
+  });
+}
+
+async function syncAttemptToRemote(attempt) {
+  const config = getRemoteConfig();
+  if (!config) {
+    return false;
+  }
+
+  const response = await fetch(`${config.baseUrl}?on_conflict=id`, {
+    method: 'POST',
+    headers: remoteHeaders(config.apiKey, {
+      'Content-Type': 'application/json',
+      Prefer: 'resolution=merge-duplicates,return=minimal',
+    }),
+    body: JSON.stringify([toRemoteRow(attempt)]),
+  });
+
+  return response.ok;
+}
+
+async function deleteAttemptFromRemote(attemptId) {
+  const config = getRemoteConfig();
+  if (!config) {
+    return false;
+  }
+
+  const response = await fetch(`${config.baseUrl}?id=eq.${encodeURIComponent(attemptId)}`, {
+    method: 'DELETE',
+    headers: remoteHeaders(config.apiKey),
+  });
+
+  return response.ok;
+}
+
+export async function refreshAttemptsFromRemote() {
+  const config = getRemoteConfig();
+  if (!config) {
+    return getAttempts();
+  }
+
+  try {
+    const response = await fetch(`${config.baseUrl}?select=*&order=submitted_at.desc`, {
+      headers: remoteHeaders(config.apiKey),
+    });
+
+    if (!response.ok) {
+      return getAttempts();
+    }
+
+    const rows = await response.json();
+    const remoteAttempts = Array.isArray(rows) ? rows.map(fromRemoteRow).filter(Boolean) : [];
+    const merged = mergeAttempts(loadJson(ATTEMPTS_KEY, []), remoteAttempts);
+    cacheAttempts(merged);
+    notifyAttemptsChanged();
+    return merged;
+  } catch {
+    return getAttempts();
+  }
+}
+
+export async function getAttemptByIdRemote(attemptId) {
+  const cached = getAttemptById(attemptId);
+  if (cached) {
+    return cached;
+  }
+
+  const config = getRemoteConfig();
+  if (!config) {
+    return null;
+  }
+
+  try {
+    const response = await fetch(`${config.baseUrl}?select=*&id=eq.${encodeURIComponent(attemptId)}&limit=1`, {
+      headers: remoteHeaders(config.apiKey),
+    });
+
+    if (!response.ok) {
+      return null;
+    }
+
+    const rows = await response.json();
+    const attempt = fromRemoteRow(rows?.[0]);
+    if (attempt) {
+      saveJson(`${RESULT_PREFIX}${attempt.id}`, attempt);
+    }
+    return attempt;
+  } catch {
+    return null;
+  }
 }
 
 function normalizeQuestions(categoryId, testId, questions) {
@@ -56,10 +248,26 @@ function migrateReasoningTest1(db) {
   return db;
 }
 
+function migrateReasoningTest2(db) {
+  const seededTest = seedDb.tests.find((test) => test.id === 'reasoning-test2');
+  if (!seededTest) {
+    return db;
+  }
+
+  db.tests = db.tests.map((test) => (test.id === seededTest.id ? { ...seededTest } : test));
+  const migratedQuestions = normalizeQuestions('reasoning', 'test2', reasoningTest2Questions);
+  db.questions = [
+    ...db.questions.filter((question) => question.testId !== 'reasoning-test2'),
+    ...migratedQuestions,
+  ];
+  return db;
+}
+
 export function ensureDb() {
   const existing = loadJson(DB_KEY, null);
   if (existing?.categories && existing?.tests && existing?.questions) {
     const migrated = migrateReasoningTest1(existing);
+    migrateReasoningTest2(migrated);
     saveJson(DB_KEY, migrated);
     return migrated;
   }
@@ -204,6 +412,8 @@ export function saveAttempt(attempt) {
   }
   saveJson(ATTEMPTS_KEY, attempts);
   saveJson(`${RESULT_PREFIX}${attempt.id}`, attempt);
+  void syncAttemptToRemote(attempt);
+  notifyAttemptsChanged();
   return attempt;
 }
 
@@ -215,6 +425,8 @@ export function deleteAttempt(attemptId) {
   const attempts = loadJson(ATTEMPTS_KEY, []).filter((attempt) => attempt.id !== attemptId);
   saveJson(ATTEMPTS_KEY, attempts);
   localStorage.removeItem(`${RESULT_PREFIX}${attemptId}`);
+  void deleteAttemptFromRemote(attemptId);
+  notifyAttemptsChanged();
 }
 
 export function getAttemptById(attemptId) {
