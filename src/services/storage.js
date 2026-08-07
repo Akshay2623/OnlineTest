@@ -254,7 +254,9 @@ function migrateReasoningTest2(db) {
     return db;
   }
 
-  db.tests = db.tests.map((test) => (test.id === seededTest.id ? { ...seededTest } : test));
+  const tests = db.tests.filter((test) => test.id !== seededTest.id);
+  tests.push({ ...seededTest });
+  db.tests = tests;
   const migratedQuestions = normalizeQuestions('reasoning', 'test2', reasoningTest2Questions);
   db.questions = [
     ...db.questions.filter((question) => question.testId !== 'reasoning-test2'),
