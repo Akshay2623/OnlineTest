@@ -1,6 +1,122 @@
 [
-  { "id": 1, "question": "What is 5 + 7?", "options": ["10", "11", "12", "13"], "correctAnswer": 2 },
-  { "id": 2, "question": "What is 15 - 6?", "options": ["7", "8", "9", "10"], "correctAnswer": 2 },
-  { "id": 3, "question": "What is 4 × 8?", "options": ["24", "28", "32", "36"], "correctAnswer": 2 },
-  { "id": 4, "question": "What is 81 ÷ 9?", "options": ["7", "8", "9", "10"], "correctAnswer": 2 }
+  {
+    "id": 1,
+    "question": "Simplify: sqrt(18) + sqrt(8)",
+    "options": ["3sqrt(2)", "4sqrt(2)", "5sqrt(2)", "6sqrt(2)"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 2,
+    "question": "The HCF of two numbers is 12 and their LCM is 180. If one number is 36, what is the other number?",
+    "options": ["48", "60", "72", "90"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "question": "If 2^x = 16, what is x?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "question": "If a number leaves remainder 5 when divided by 9, what will be the remainder when its double is divided by 9?",
+    "options": ["1", "2", "5", "8"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "question": "Simplify: sqrt(50)",
+    "options": ["2sqrt(5)", "5sqrt(2)", "10sqrt(5)", "25sqrt(2)"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "What is the LCM of 18, 24, and 30?",
+    "options": ["180", "240", "360", "720"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "question": "Simplify: 3^5 / 3^2",
+    "options": ["9", "18", "27", "81"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "question": "What is the smallest number that leaves a remainder 7 when divided by 12, 15, and 20?",
+    "options": ["67", "127", "187", "247"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "question": "Simplify: 1/sqrt(3)",
+    "options": ["sqrt(3)", "sqrt(3)/2", "sqrt(3)/3", "3sqrt(3)"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "question": "What is the HCF of 36 and 48?",
+    "options": ["6", "8", "12", "16"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "If sqrt(x) = 5, what is the value of x?",
+    "options": ["10", "15", "20", "25"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 12,
+    "question": "How many positive divisors does 240 have?",
+    "options": ["16", "18", "20", "24"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 13,
+    "question": "Simplify: 2^3 x 2^4",
+    "options": ["32", "64", "128", "256"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "question": "If a number leaves a remainder 4 when divided by 7, what remainder will it leave after adding 10?",
+    "options": ["0", "2", "4", "6"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 15,
+    "question": "Simplify: sqrt(12) + sqrt(27)",
+    "options": ["3sqrt(3)", "4sqrt(3)", "5sqrt(3)", "6sqrt(3)"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 16,
+    "question": "If 3^x = 81, what is x?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 17,
+    "question": "How many numbers from 1 to 100 are divisible by 4?",
+    "options": ["20", "24", "25", "26"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is a rational number?",
+    "options": ["sqrt(2)", "sqrt(3)", "sqrt(9)", "sqrt(5)"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "question": "What is the smallest number divisible by 2, 3, and 5?",
+    "options": ["10", "20", "30", "60"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 20,
+    "question": "Which of the following is correct?",
+    "options": ["sqrt(18) = 3sqrt(2)", "sqrt(18) = 2sqrt(3)", "sqrt(18) = 9sqrt(2)", "sqrt(18) = 6sqrt(3)"],
+    "correctAnswer": 0
+  }
 ]

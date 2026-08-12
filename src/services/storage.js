@@ -1,5 +1,6 @@
 import { seedDb } from '../data/seedData.js';
 import englishTest1Questions from '../data/english/test1.json';
+import mathTest1Questions from '../data/math/test1.json';
 import reasoningTest1Questions from '../data/reasoning/test1.json';
 import reasoningTest2Questions from '../data/reasoning/test2.json';
 
@@ -294,7 +295,8 @@ export function ensureDb() {
   const existing = loadJson(DB_KEY, null);
   if (existing?.categories && existing?.tests && existing?.questions) {
     const migratedEnglish = ensureSeedTest(existing, 'english', 'test1', englishTest1Questions);
-    const migrated = migrateReasoningTest1(migratedEnglish);
+    const migratedMath = ensureSeedTest(migratedEnglish, 'math', 'test1', mathTest1Questions);
+    const migrated = migrateReasoningTest1(migratedMath);
     migrateReasoningTest2(migrated);
     saveJson(DB_KEY, migrated);
     return migrated;
