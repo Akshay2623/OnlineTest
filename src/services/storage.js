@@ -249,18 +249,26 @@ function migrateReasoningTest1(db) {
   return db;
 }
 
-function migrateEnglishTest1(db) {
-  const seededTest = seedDb.tests.find((test) => test.id === 'english-test1');
+function ensureSeedTest(db, categoryId, testId, questions) {
+  const seededTest = seedDb.tests.find((test) => test.id === `${categoryId}-${testId}`);
   if (!seededTest) {
     return db;
   }
 
-  db.tests = db.tests.map((test) => (test.id === seededTest.id ? { ...seededTest } : test));
-  const migratedQuestions = normalizeQuestions('english', 'test1', englishTest1Questions);
+  const testIndex = db.tests.findIndex((test) => test.id === seededTest.id);
+  if (testIndex >= 0) {
+    db.tests[testIndex] = { ...seededTest };
+  } else {
+    db.tests.push({ ...seededTest });
+  }
+
+  const normalizedQuestions = normalizeQuestions(categoryId, testId, questions);
+  const questionIds = new Set(normalizedQuestions.map((question) => question.id));
   db.questions = [
-    ...db.questions.filter((question) => question.testId !== 'english-test1'),
-    ...migratedQuestions,
+    ...db.questions.filter((question) => question.testId !== `${categoryId}-${testId}` || !questionIds.has(question.id)),
+    ...normalizedQuestions,
   ];
+
   return db;
 }
 
@@ -284,7 +292,7 @@ function migrateReasoningTest2(db) {
 export function ensureDb() {
   const existing = loadJson(DB_KEY, null);
   if (existing?.categories && existing?.tests && existing?.questions) {
-    const migratedEnglish = migrateEnglishTest1(existing);
+    const migratedEnglish = ensureSeedTest(existing, 'english', 'test1', englishTest1Questions);
     const migrated = migrateReasoningTest1(migratedEnglish);
     migrateReasoningTest2(migrated);
     saveJson(DB_KEY, migrated);
