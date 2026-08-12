@@ -1,4 +1,5 @@
 import { seedDb } from '../data/seedData.js';
+import englishTest1Questions from '../data/english/test1.json';
 import reasoningTest1Questions from '../data/reasoning/test1.json';
 import reasoningTest2Questions from '../data/reasoning/test2.json';
 
@@ -248,6 +249,21 @@ function migrateReasoningTest1(db) {
   return db;
 }
 
+function migrateEnglishTest1(db) {
+  const seededTest = seedDb.tests.find((test) => test.id === 'english-test1');
+  if (!seededTest) {
+    return db;
+  }
+
+  db.tests = db.tests.map((test) => (test.id === seededTest.id ? { ...seededTest } : test));
+  const migratedQuestions = normalizeQuestions('english', 'test1', englishTest1Questions);
+  db.questions = [
+    ...db.questions.filter((question) => question.testId !== 'english-test1'),
+    ...migratedQuestions,
+  ];
+  return db;
+}
+
 function migrateReasoningTest2(db) {
   const seededTest = seedDb.tests.find((test) => test.id === 'reasoning-test2');
   if (!seededTest) {
@@ -268,7 +284,8 @@ function migrateReasoningTest2(db) {
 export function ensureDb() {
   const existing = loadJson(DB_KEY, null);
   if (existing?.categories && existing?.tests && existing?.questions) {
-    const migrated = migrateReasoningTest1(existing);
+    const migratedEnglish = migrateEnglishTest1(existing);
+    const migrated = migrateReasoningTest1(migratedEnglish);
     migrateReasoningTest2(migrated);
     saveJson(DB_KEY, migrated);
     return migrated;

@@ -1,6 +1,222 @@
 [
-  { "id": 1, "question": "Choose the correct article: ___ apple a day keeps the doctor away.", "options": ["A", "An", "The", "No article"], "correctAnswer": 1 },
-  { "id": 2, "question": "Pick the synonym of 'rapid'.", "options": ["Slow", "Fast", "Weak", "Soft"], "correctAnswer": 1 },
-  { "id": 3, "question": "Select the correct spelling.", "options": ["Recieve", "Receive", "Receeve", "Receve"], "correctAnswer": 1 },
-  { "id": 4, "question": "Which sentence is grammatically correct?", "options": ["He go to school daily.", "He goes to school daily.", "He going to school daily.", "He gone to school daily."], "correctAnswer": 1 }
+  {
+    "id": 1,
+    "question": "He said to me, \"Have you completed your assignment?\"",
+    "options": [
+      "He asked me if I had completed my assignment.",
+      "He asked me if I have completed my assignment.",
+      "He told me whether I completed my assignment.",
+      "He asked me that I had completed my assignment."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "question": "He is ___ honest man and ___ university professor.",
+    "options": [
+      "a, an",
+      "an, a",
+      "an, an",
+      "a, a"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "question": "The teacher said to the students, \"Do not waste your time.\"",
+    "options": [
+      "The teacher told the students that they did not waste their time.",
+      "The teacher advised the students not to waste their time.",
+      "The teacher said the students not to waste their time.",
+      "The teacher ordered that don't waste your time."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "question": "___ Himalayas are among ___ highest mountain ranges in the world.",
+    "options": [
+      "A, the",
+      "The, the",
+      "The, a",
+      "A, a"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "question": "She said, \"I cannot attend the meeting because I am ill.\"",
+    "options": [
+      "She said that she could not attend the meeting because she was ill.",
+      "She said that she cannot attend the meeting because she is ill.",
+      "She told that she could not attend the meeting because I was ill.",
+      "She said that she could not attend the meeting because I am ill."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "question": "She is ___ European who works as ___ engineer in a multinational company.",
+    "options": [
+      "an, an",
+      "a, an",
+      "a, a",
+      "an, a"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "question": "Rahul said, \"I have been preparing for this examination for two years.\"",
+    "options": [
+      "Rahul said that he had been preparing for that examination for two years.",
+      "Rahul said that he has been preparing for that examination for two years.",
+      "Rahul said that I had been preparing for this examination for two years.",
+      "Rahul told that he was preparing for this examination for two years."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "question": "He was elected ___ chairman of the committee and later became ___ Member of Parliament.",
+    "options": [
+      "a, a",
+      "the, the",
+      "Ø, a",
+      "an, the"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "question": "The officer said to the soldier, \"Bring the documents before you leave.\"",
+    "options": [
+      "The officer ordered the soldier to bring the documents before he left.",
+      "The officer said the soldier bring the documents before you leave.",
+      "The officer told the soldier that bring the documents before he leaves.",
+      "The officer asked the soldier that he brought the documents before leaving."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "question": "___ knowledge of mathematics is essential for ___ engineer.",
+    "options": [
+      "A, an",
+      "The, a",
+      "Ø, an",
+      "A, a"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "He said, \"What a beautiful painting it is!\"",
+    "options": [
+      "He exclaimed that it was a very beautiful painting.",
+      "He said that what a beautiful painting it was.",
+      "He exclaimed what a beautiful painting it is.",
+      "He told that the painting was beautiful."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "question": "My brother plays ___ violin, while my sister is learning ___ guitar.",
+    "options": [
+      "a, a",
+      "the, the",
+      "an, the",
+      "the, a"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "The captain said, \"Let us practise for another hour.\"",
+    "options": [
+      "The captain ordered that they practised for another hour.",
+      "The captain suggested that they should practise for another hour.",
+      "The captain said that let us practise for another hour.",
+      "The captain told them to practise for another hour."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "question": "___ rich should not always be considered ___ happiest people.",
+    "options": [
+      "A, the",
+      "The, the",
+      "The, a",
+      "Ø, the"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 15,
+    "question": "Mother said to me, \"Why did you not inform me earlier?\"",
+    "options": [
+      "Mother asked me why I had not informed her earlier.",
+      "Mother asked me why had I not informed her earlier.",
+      "Mother said to me why I did not inform her earlier.",
+      "Mother asked me why I have not informed her earlier."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "question": "He returned from ___ United States after completing ___ MBA from a reputed university.",
+    "options": [
+      "a, an",
+      "the, an",
+      "the, a",
+      "Ø, an"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "question": "What is the main idea of the passage?",
+    "options": [
+      "Talent is the only requirement for success.",
+      "Intelligence is more important than hard work.",
+      "Persistence combined with adaptability plays an important role in success.",
+      "Failure should always be avoided."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 18,
+    "question": "According to the passage, persistence means—",
+    "options": [
+      "repeating the same action regardless of the result",
+      "continuing toward a goal while learning from failures",
+      "depending entirely on natural talent",
+      "avoiding difficult situations"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 19,
+    "question": "Which of the following can be inferred from the passage?",
+    "options": [
+      "Talented people always succeed.",
+      "Ordinary people cannot achieve extraordinary results.",
+      "A person should change his goal whenever he fails.",
+      "Adaptability can make persistent effort more effective."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 20,
+    "question": "The word \"extraordinary\" in the passage most nearly means—",
+    "options": [
+      "ordinary",
+      "unusual",
+      "temporary",
+      "predictable"
+    ],
+    "correctAnswer": 1
+  }
 ]
