@@ -1,122 +1,122 @@
 [
   {
     "id": 1,
-    "question": "Simplify: sqrt(18) + sqrt(8)",
-    "options": ["3sqrt(2)", "4sqrt(2)", "5sqrt(2)", "6sqrt(2)"],
+    "question": "सरल कीजिए: √18 + √8",
+    "options": ["3√2", "4√2", "5√2", "6√2"],
     "correctAnswer": 2
   },
   {
     "id": 2,
-    "question": "The HCF of two numbers is 12 and their LCM is 180. If one number is 36, what is the other number?",
+    "question": "दो संख्याओं का HCF 12 और LCM 180 है। यदि एक संख्या 36 है, तो दूसरी संख्या क्या होगी?",
     "options": ["48", "60", "72", "90"],
     "correctAnswer": 1
   },
   {
     "id": 3,
-    "question": "If 2^x = 16, what is x?",
+    "question": "यदि 2^x = 16 हो, तो x का मान क्या होगा?",
     "options": ["2", "3", "4", "5"],
     "correctAnswer": 2
   },
   {
     "id": 4,
-    "question": "If a number leaves remainder 5 when divided by 9, what will be the remainder when its double is divided by 9?",
+    "question": "किसी संख्या को 9 से भाग देने पर शेषफल 5 आता है। उसी संख्या के दोगुने को 9 से भाग देने पर शेषफल क्या होगा?",
     "options": ["1", "2", "5", "8"],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 5,
-    "question": "Simplify: sqrt(50)",
-    "options": ["2sqrt(5)", "5sqrt(2)", "10sqrt(5)", "25sqrt(2)"],
+    "question": "√50 का सरल रूप क्या है?",
+    "options": ["2√5", "5√2", "10√5", "25√2"],
     "correctAnswer": 1
   },
   {
     "id": 6,
-    "question": "What is the LCM of 18, 24, and 30?",
+    "question": "18, 24 और 30 का LCM क्या है?",
     "options": ["180", "240", "360", "720"],
     "correctAnswer": 2
   },
   {
     "id": 7,
-    "question": "Simplify: 3^5 / 3^2",
+    "question": "सरल कीजिए: 3⁵ / 3²",
     "options": ["9", "18", "27", "81"],
     "correctAnswer": 2
   },
   {
     "id": 8,
-    "question": "What is the smallest number that leaves a remainder 7 when divided by 12, 15, and 20?",
+    "question": "वह सबसे छोटी संख्या कौन-सी है जिसे 12, 15 और 20 से भाग देने पर हर बार 7 शेष बचता है?",
     "options": ["67", "127", "187", "247"],
     "correctAnswer": 0
   },
   {
     "id": 9,
-    "question": "Simplify: 1/sqrt(3)",
-    "options": ["sqrt(3)", "sqrt(3)/2", "sqrt(3)/3", "3sqrt(3)"],
+    "question": "सरल कीजिए: 1/√3",
+    "options": ["√3", "√3/2", "√3/3", "3√3"],
     "correctAnswer": 2
   },
   {
     "id": 10,
-    "question": "What is the HCF of 36 and 48?",
+    "question": "36 और 48 का HCF क्या है?",
     "options": ["6", "8", "12", "16"],
     "correctAnswer": 2
   },
   {
     "id": 11,
-    "question": "If sqrt(x) = 5, what is the value of x?",
+    "question": "यदि √x = 5 हो, तो x का मान क्या होगा?",
     "options": ["10", "15", "20", "25"],
     "correctAnswer": 3
   },
   {
     "id": 12,
-    "question": "How many positive divisors does 240 have?",
+    "question": "240 के कुल धनात्मक भाजकों की संख्या कितनी है?",
     "options": ["16", "18", "20", "24"],
     "correctAnswer": 2
   },
   {
     "id": 13,
-    "question": "Simplify: 2^3 x 2^4",
+    "question": "सरल कीजिए: 2³ × 2⁴",
     "options": ["32", "64", "128", "256"],
     "correctAnswer": 2
   },
   {
     "id": 14,
-    "question": "If a number leaves a remainder 4 when divided by 7, what remainder will it leave after adding 10?",
+    "question": "यदि किसी संख्या को 7 से भाग देने पर 4 शेष आता है, तो उसी संख्या में 10 जोड़ने पर 7 से भाग देने पर शेषफल क्या होगा?",
     "options": ["0", "2", "4", "6"],
-    "correctAnswer": 1
+    "correctAnswer": 0
   },
   {
     "id": 15,
-    "question": "Simplify: sqrt(12) + sqrt(27)",
-    "options": ["3sqrt(3)", "4sqrt(3)", "5sqrt(3)", "6sqrt(3)"],
+    "question": "सरल कीजिए: √12 + √27",
+    "options": ["3√3", "4√3", "5√3", "6√3"],
     "correctAnswer": 2
   },
   {
     "id": 16,
-    "question": "If 3^x = 81, what is x?",
+    "question": "यदि 3^x = 81 हो, तो x का मान क्या होगा?",
     "options": ["2", "3", "4", "5"],
     "correctAnswer": 2
   },
   {
     "id": 17,
-    "question": "How many numbers from 1 to 100 are divisible by 4?",
+    "question": "1 से 100 तक कितनी संख्याएँ 4 से विभाज्य हैं?",
     "options": ["20", "24", "25", "26"],
     "correctAnswer": 2
   },
   {
     "id": 18,
-    "question": "Which of the following is a rational number?",
-    "options": ["sqrt(2)", "sqrt(3)", "sqrt(9)", "sqrt(5)"],
+    "question": "निम्न में से किसका मान परिमेय संख्या है?",
+    "options": ["√2", "√3", "√9", "√5"],
     "correctAnswer": 2
   },
   {
     "id": 19,
-    "question": "What is the smallest number divisible by 2, 3, and 5?",
+    "question": "2, 3 और 5 से विभाज्य सबसे छोटी संख्या कौन-सी है?",
     "options": ["10", "20", "30", "60"],
     "correctAnswer": 2
   },
   {
     "id": 20,
-    "question": "Which of the following is correct?",
-    "options": ["sqrt(18) = 3sqrt(2)", "sqrt(18) = 2sqrt(3)", "sqrt(18) = 9sqrt(2)", "sqrt(18) = 6sqrt(3)"],
+    "question": "निम्न में से कौन-सा सही है?",
+    "options": ["√18 = 3√2", "√18 = 2√3", "√18 = 9√2", "√18 = 6√3"],
     "correctAnswer": 0
   }
 ]
