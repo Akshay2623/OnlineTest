@@ -18,6 +18,7 @@ export default function QuestionCard({
       <div className="question-card-top">
         <div>
           <span className="question-kicker">Question {currentQuestionNumber}</span>
+          {question.passage ? <div className="question-passage">{question.passage}</div> : null}
           <h2>{question.question}</h2>
           {question.image ? <img className="question-image" src={question.image} alt="" /> : null}
         </div>

@@ -431,6 +431,16 @@ h1 {
   letter-spacing: 0.04em;
 }
 
+.question-passage {
+  margin: 8px 0 14px;
+  padding: 16px 18px;
+  border-left: 4px solid rgba(37, 99, 235, 0.36);
+  border-radius: 18px;
+  background: rgba(37, 99, 235, 0.05);
+  color: var(--text);
+  line-height: 1.75;
+}
+
 .question-card h2 {
   font-size: clamp(1.5rem, 2vw, 2rem);
 }

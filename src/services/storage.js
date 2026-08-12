@@ -231,6 +231,7 @@ function normalizeQuestions(categoryId, testId, questions) {
     negativeMarks: Number(question.negativeMarks ?? 0.25),
     image: question.image || '',
     explanation: question.explanation || '',
+    passage: question.passage || '',
   }));
 }
 
