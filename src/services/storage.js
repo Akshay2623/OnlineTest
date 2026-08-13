@@ -4,6 +4,7 @@ import englishTest2Questions from '../data/english/test2.json';
 import mathTest1Questions from '../data/math/test1.json';
 import reasoningTest1Questions from '../data/reasoning/test1.json';
 import reasoningTest2Questions from '../data/reasoning/test2.json';
+import reasoningTest3Questions from '../data/reasoning/test3.json';
 
 const DB_KEY = 'online-test-portal:db';
 const ATTEMPTS_KEY = 'online-test-portal:attempts';
@@ -292,6 +293,29 @@ function migrateReasoningTest2(db) {
   return db;
 }
 
+function migrateReasoningTest3(db) {
+  const seededTest = seedDb.tests.find((test) => test.id === 'reasoning-test3');
+  if (!seededTest) {
+    return db;
+  }
+
+  const testIndex = db.tests.findIndex((test) => test.id === seededTest.id);
+  if (testIndex >= 0) {
+    db.tests[testIndex] = { ...seededTest };
+  } else {
+    db.tests.push({ ...seededTest });
+  }
+
+  const normalizedQuestions = normalizeQuestions('reasoning', 'test3', reasoningTest3Questions);
+  const questionIds = new Set(normalizedQuestions.map((question) => question.id));
+  db.questions = [
+    ...db.questions.filter((question) => question.testId !== 'reasoning-test3' || !questionIds.has(question.id)),
+    ...normalizedQuestions,
+  ];
+
+  return db;
+}
+
 export function ensureDb() {
   const existing = loadJson(DB_KEY, null);
   if (existing?.categories && existing?.tests && existing?.questions) {
@@ -299,9 +323,10 @@ export function ensureDb() {
     const migratedEnglishTest2 = ensureSeedTest(migratedEnglish, 'english', 'test2', englishTest2Questions);
     const migratedMath = ensureSeedTest(migratedEnglishTest2, 'math', 'test1', mathTest1Questions);
     const migrated = migrateReasoningTest1(migratedMath);
-    migrateReasoningTest2(migrated);
-    saveJson(DB_KEY, migrated);
-    return migrated;
+    const migratedReasoning2 = migrateReasoningTest2(migrated);
+    const migratedReasoning3 = migrateReasoningTest3(migratedReasoning2);
+    saveJson(DB_KEY, migratedReasoning3);
+    return migratedReasoning3;
   }
 
   saveJson(DB_KEY, seedDb);
