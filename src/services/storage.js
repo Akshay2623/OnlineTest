@@ -2,6 +2,7 @@ import { seedDb } from '../data/seedData.js';
 import englishTest1Questions from '../data/english/test1.json';
 import englishTest2Questions from '../data/english/test2.json';
 import mathTest1Questions from '../data/math/test1.json';
+import mathTest2Questions from '../data/math/test2.json';
 import reasoningTest1Questions from '../data/reasoning/test1.json';
 import reasoningTest2Questions from '../data/reasoning/test2.json';
 import reasoningTest3Questions from '../data/reasoning/test3.json';
@@ -313,6 +314,29 @@ function migrateReasoningTest2(db) {
   return db;
 }
 
+function migrateMathTest2(db) {
+  const seededTest = seedDb.tests.find((test) => test.id === 'math-test2');
+  if (!seededTest) {
+    return db;
+  }
+
+  const testIndex = db.tests.findIndex((test) => test.id === seededTest.id);
+  if (testIndex >= 0) {
+    db.tests[testIndex] = { ...seededTest };
+  } else {
+    db.tests.push({ ...seededTest });
+  }
+
+  const normalizedQuestions = normalizeQuestions('math', 'test2', mathTest2Questions);
+  const questionIds = new Set(normalizedQuestions.map((question) => question.id));
+  db.questions = [
+    ...db.questions.filter((question) => question.testId !== 'math-test2' || !questionIds.has(question.id)),
+    ...normalizedQuestions,
+  ];
+
+  return db;
+}
+
 function migrateReasoningTest3(db) {
   const seededTest = seedDb.tests.find((test) => test.id === 'reasoning-test3');
   if (!seededTest) {
@@ -342,7 +366,8 @@ export function ensureDb() {
     const migratedEnglish = ensureSeedTest(existing, 'english', 'test1', englishTest1Questions);
     const migratedEnglishTest2 = ensureSeedTest(migratedEnglish, 'english', 'test2', englishTest2Questions);
     const migratedMath = ensureSeedTest(migratedEnglishTest2, 'math', 'test1', mathTest1Questions);
-    const migrated = migrateReasoningTest1(migratedMath);
+    const migratedMathTest2 = migrateMathTest2(migratedMath);
+    const migrated = migrateReasoningTest1(migratedMathTest2);
     const migratedReasoning2 = migrateReasoningTest2(migrated);
     const migratedReasoning3 = migrateReasoningTest3(migratedReasoning2);
     saveJson(DB_KEY, migratedReasoning3);
