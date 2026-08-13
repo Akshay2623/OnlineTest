@@ -3,6 +3,7 @@ import englishTest1Questions from '../data/english/test1.json';
 import englishTest2Questions from '../data/english/test2.json';
 import mathTest1Questions from '../data/math/test1.json';
 import mathTest2Questions from '../data/math/test2.json';
+import gkTest1Questions from '../data/gk/test1.json';
 import reasoningTest1Questions from '../data/reasoning/test1.json';
 import reasoningTest2Questions from '../data/reasoning/test2.json';
 import reasoningTest3Questions from '../data/reasoning/test3.json';
@@ -337,6 +338,29 @@ function migrateMathTest2(db) {
   return db;
 }
 
+function migrateGkTest1(db) {
+  const seededTest = seedDb.tests.find((test) => test.id === 'gk-test1');
+  if (!seededTest) {
+    return db;
+  }
+
+  const testIndex = db.tests.findIndex((test) => test.id === seededTest.id);
+  if (testIndex >= 0) {
+    db.tests[testIndex] = { ...seededTest };
+  } else {
+    db.tests.push({ ...seededTest });
+  }
+
+  const normalizedQuestions = normalizeQuestions('gk', 'test1', gkTest1Questions);
+  const questionIds = new Set(normalizedQuestions.map((question) => question.id));
+  db.questions = [
+    ...db.questions.filter((question) => question.testId !== 'gk-test1' || !questionIds.has(question.id)),
+    ...normalizedQuestions,
+  ];
+
+  return db;
+}
+
 function migrateReasoningTest3(db) {
   const seededTest = seedDb.tests.find((test) => test.id === 'reasoning-test3');
   if (!seededTest) {
@@ -367,7 +391,8 @@ export function ensureDb() {
     const migratedEnglishTest2 = ensureSeedTest(migratedEnglish, 'english', 'test2', englishTest2Questions);
     const migratedMath = ensureSeedTest(migratedEnglishTest2, 'math', 'test1', mathTest1Questions);
     const migratedMathTest2 = migrateMathTest2(migratedMath);
-    const migrated = migrateReasoningTest1(migratedMathTest2);
+    const migratedGkTest1 = migrateGkTest1(migratedMathTest2);
+    const migrated = migrateReasoningTest1(migratedGkTest1);
     const migratedReasoning2 = migrateReasoningTest2(migrated);
     const migratedReasoning3 = migrateReasoningTest3(migratedReasoning2);
     saveJson(DB_KEY, migratedReasoning3);
