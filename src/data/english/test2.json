@@ -1,6 +1,146 @@
 [
-  { "id": 1, "question": "Choose the antonym of 'ancient'.", "options": ["Old", "Historic", "Modern", "Past"], "correctAnswer": 2 },
-  { "id": 2, "question": "Fill in the blank: She has lived here ___ 2020.", "options": ["for", "since", "from", "by"], "correctAnswer": 1 },
-  { "id": 3, "question": "Pick the correct preposition: interested ___ music.", "options": ["in", "on", "at", "for"], "correctAnswer": 0 },
-  { "id": 4, "question": "Choose the plural form of 'child'.", "options": ["Childs", "Children", "Childes", "Childer"], "correctAnswer": 1 }
+  {
+    "id": 1,
+    "question": "Neither the captain nor his players ______ willing to accept the referee's decision.",
+    "options": ["was", "were", "has", "is"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "question": "By the time the police arrived, the thief ______ from the building.",
+    "options": ["escaped", "has escaped", "had escaped", "was escaping"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "question": "The quality of these products ______ improved considerably over the last few years.",
+    "options": ["have", "are", "has", "were"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "question": "If he ______ harder, he would have secured a higher rank in the examination.",
+    "options": ["studies", "studied", "had studied", "has studied"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "question": "A number of candidates ______ waiting outside the examination hall.",
+    "options": ["is", "was", "are", "has"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 6,
+    "question": "She ______ in Delhi for five years before she moved to Jaipur.",
+    "options": ["lives", "has lived", "had lived", "was living"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "question": "Each of the soldiers ______ been instructed to carry his identity card.",
+    "options": ["have", "are", "has", "were"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "question": "The officer ordered that the gate ______ immediately.",
+    "options": ["closes", "closed", "be closed", "is closed"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "passage": "Success in any field rarely comes from talent alone. A talented person may have the ability to achieve great things, but without discipline and consistent effort, that ability often remains unused. Discipline teaches a person to continue working even when the results are not immediate. It also helps an individual control distractions and remain focused on a particular goal. Failures, rather than being signs of weakness, can provide valuable lessons when they are examined honestly. A person who learns from mistakes becomes better prepared to face future challenges. Therefore, true success is not simply the result of intelligence or natural ability; it is the outcome of patience, discipline, continuous learning, and the courage to improve after every failure.",
+    "question": "According to the passage, talent alone is insufficient because:",
+    "options": [
+      "talented people always become overconfident",
+      "ability is useless without discipline and consistent effort",
+      "intelligent people are afraid of failure",
+      "talent prevents a person from learning"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 10,
+    "passage": "Success in any field rarely comes from talent alone. A talented person may have the ability to achieve great things, but without discipline and consistent effort, that ability often remains unused. Discipline teaches a person to continue working even when the results are not immediate. It also helps an individual control distractions and remain focused on a particular goal. Failures, rather than being signs of weakness, can provide valuable lessons when they are examined honestly. A person who learns from mistakes becomes better prepared to face future challenges. Therefore, true success is not simply the result of intelligence or natural ability; it is the outcome of patience, discipline, continuous learning, and the courage to improve after every failure.",
+    "question": "According to the passage, discipline helps a person to:",
+    "options": [
+      "avoid every possible failure",
+      "achieve immediate results",
+      "control distractions and remain focused",
+      "depend completely on natural ability"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "passage": "Success in any field rarely comes from talent alone. A talented person may have the ability to achieve great things, but without discipline and consistent effort, that ability often remains unused. Discipline teaches a person to continue working even when the results are not immediate. It also helps an individual control distractions and remain focused on a particular goal. Failures, rather than being signs of weakness, can provide valuable lessons when they are examined honestly. A person who learns from mistakes becomes better prepared to face future challenges. Therefore, true success is not simply the result of intelligence or natural ability; it is the outcome of patience, discipline, continuous learning, and the courage to improve after every failure.",
+    "question": "According to the passage, failures can be useful when a person:",
+    "options": [
+      "ignores them completely",
+      "blames others for them",
+      "examines them honestly and learns from them",
+      "avoids taking further challenges"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 12,
+    "passage": "Success in any field rarely comes from talent alone. A talented person may have the ability to achieve great things, but without discipline and consistent effort, that ability often remains unused. Discipline teaches a person to continue working even when the results are not immediate. It also helps an individual control distractions and remain focused on a particular goal. Failures, rather than being signs of weakness, can provide valuable lessons when they are examined honestly. A person who learns from mistakes becomes better prepared to face future challenges. Therefore, true success is not simply the result of intelligence or natural ability; it is the outcome of patience, discipline, continuous learning, and the courage to improve after every failure.",
+    "question": "Which of the following best expresses the main idea of the passage?",
+    "options": [
+      "Intelligence is the only requirement for success.",
+      "Failure is the greatest obstacle to success.",
+      "Natural talent is more important than hard work.",
+      "Success results from discipline, effort, learning, and perseverance."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 13,
+    "question": "The news of the soldiers' victory ______ spread rapidly throughout the country.",
+    "options": ["have", "were", "has", "are"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "question": "He ______ the same mistake several times despite being warned.",
+    "options": ["repeats", "has repeated", "had repeat", "is repeating"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 15,
+    "question": "Neither of the two answers ______ correct.",
+    "options": ["are", "were", "have", "is"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 16,
+    "question": "When I reached the station, the train ______ already ______.",
+    "options": ["has, left", "had, left", "was, leave", "is, leaving"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "question": "The committee ______ divided in its opinion regarding the new policy.",
+    "options": ["is", "are", "has", "was"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "question": "If the weather ______ favourable tomorrow, the team will begin the operation.",
+    "options": ["remained", "remains", "will remain", "had remained"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 19,
+    "question": "The captain, along with his team members, ______ reached the camp.",
+    "options": ["have", "are", "has", "were"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 20,
+    "question": "Had the pilot ______ the warning in time, the accident could have been avoided.",
+    "options": ["notices", "noticed", "had noticed", "has noticed"],
+    "correctAnswer": 1
+  }
 ]
