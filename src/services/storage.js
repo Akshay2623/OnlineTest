@@ -126,6 +126,26 @@ function mergeAttempts(...sources) {
   return sortAttemptsDesc(Array.from(map.values()));
 }
 
+function getTestSortKey(test) {
+  const id = String(test?.id || '');
+  const match = id.match(/^(.*-)?test(\d+)$/i);
+  if (match) {
+    return Number(match[2]);
+  }
+
+  return Number.MAX_SAFE_INTEGER;
+}
+
+function sortTestsById(a, b) {
+  const left = getTestSortKey(a);
+  const right = getTestSortKey(b);
+  if (left !== right) {
+    return left - right;
+  }
+
+  return String(a?.id || '').localeCompare(String(b?.id || ''));
+}
+
 function cacheAttempts(attempts) {
   saveJson(ATTEMPTS_KEY, attempts);
   attempts.forEach((attempt) => {
@@ -369,7 +389,9 @@ export function getTests() {
 }
 
 export function getTestsByCategory(categoryId) {
-  return getTests().filter((test) => test.categoryId === categoryId);
+  return getTests()
+    .filter((test) => test.categoryId === categoryId)
+    .sort(sortTestsById);
 }
 
 export function getTestById(testId) {
