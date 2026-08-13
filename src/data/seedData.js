@@ -91,7 +91,7 @@ export const seedDb = {
   categories: seedCategories,
   tests: [
     createTest('english', 'test1', 'Test 1', 'English fundamentals', 15, englishTest1),
-    createTest('english', 'test2', 'Test 2', 'English practice set 2', 10, englishTest2),
+    createTest('english', 'test2', 'Test 2', 'English practice set 2', 15, englishTest2),
     createTest('english', 'test3', 'Test 3', 'English practice set 3', 10, englishTest3),
     createTest('english', 'test4', 'Test 4', 'English practice set 4', 10, englishTest4),
     createTest('english', 'test5', 'Test 5', 'English practice set 5', 10, englishTest5),
