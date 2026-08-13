@@ -489,13 +489,20 @@ export function getTests() {
 }
 
 export function getTestsByCategory(categoryId) {
-  return getTests()
-    .filter((test) => test.categoryId === categoryId)
+  const tests = getTests().filter((test) => test.categoryId === categoryId);
+  const testIds = new Set(tests.map((test) => test.id));
+  seedDb.tests.forEach((test) => {
+    if (test.categoryId === categoryId && !testIds.has(test.id)) {
+      tests.push({ ...test });
+    }
+  });
+
+  return tests
     .sort(sortTestsById);
 }
 
 export function getTestById(testId) {
-  return getTests().find((test) => test.id === testId);
+  return getTests().find((test) => test.id === testId) || seedDb.tests.find((test) => test.id === testId);
 }
 
 export function getQuestions() {
@@ -503,7 +510,16 @@ export function getQuestions() {
 }
 
 export function getQuestionsByTest(testId) {
-  return getQuestions().filter((question) => question.testId === testId);
+  const questions = getQuestions().filter((question) => question.testId === testId);
+  if (questions.length > 0) {
+    return questions;
+  }
+
+  return normalizeQuestions(
+    testId.split('-')[0] || '',
+    testId.split('-').slice(1).join('-'),
+    seedDb.questions.filter((question) => question.testId === testId),
+  );
 }
 
 export function getActiveTestForStudent(categoryId, testId) {
